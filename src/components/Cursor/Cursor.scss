@@ -2,7 +2,7 @@
   width: 24px;
   height: 24px;
   mix-blend-mode: difference;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   position: absolute;
   z-index: 999999999;
   transform: translate(-50%, -50%);
@@ -19,17 +19,10 @@
   
 }
 
-.cursor-hide{
-  display: none;
-}
-
 .cursor-big {
   height: 100px;
   width: 100px;
 }
-
-
-
 
 .cursor-pensil {
   height: 40px;

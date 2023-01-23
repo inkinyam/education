@@ -13,7 +13,7 @@ const handleBurgerClick =() => {
 }
 
  return (
-    <section className = "navigation">
+    <header className = "navigation">
       <div className = "navigation__container">
         <a href      = 'https://genplanmos.ru/' 
            target    = "_blank" 
@@ -25,10 +25,10 @@ const handleBurgerClick =() => {
         </a>
         <nav className="navigation__list">
         <Link to="about"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Как проходит</Link> 
-        <Link to="phases"    smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Сроки и этапы</Link> 
-        <Link to="howItWas"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Стажировка 2022</Link> 
-        <a href="https://internship.genplanmos.ru/" onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' target='_blank' rel='noreferrer'>Стажировка 2021</a> 
-        <Link to="programs"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Программы</Link> 
+        <Link to="phases"    smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >О программе</Link> 
+        <Link to="howItWas"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Вебинары</Link> 
+        <Link to="howItWas"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Лекции в записи</Link> 
+        <Link to="programs"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Подать заявку</Link> 
       </nav>
 
       <button className="navigation__burger" onClick={handleBurgerClick}>
@@ -38,7 +38,7 @@ const handleBurgerClick =() => {
           </svg>
         </button>
       </div>
-    </section>
+    </header>
   )
 }
 

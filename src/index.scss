@@ -1,9 +1,6 @@
 @import url(../src/vendors/normalize.css);
 @import url(../src/vendors/fonts.css);
 @import url(../src/utils/animation.scss);
-
-
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import '~video-react/styles/scss/video-react';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 
@@ -50,22 +47,8 @@ body {
   --light-hovered: #F0F0F4;
   --light-onclick: #FFFFFF;
   --light-disabled: #DFDFDF;
-
-
-  --transition-duration: 0.4s;
-  --transition-timing: ease-in-out;
 }
 
-
-@keyframes bganimation {
-  from {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
 
 
 

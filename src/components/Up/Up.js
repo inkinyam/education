@@ -16,7 +16,7 @@ const handleShowButton =() => {
   setIsVisible(true);
 }
 
-const habdleHideButton = () => {
+const handleHideButton = () => {
   setIsVisible(false)
 }
 

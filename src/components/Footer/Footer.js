@@ -9,7 +9,7 @@ const Footer = props => {
   <footer className='footer'>
     <div className='footer__container'>
       <div className='footer__box'>
-        <h4 className='footer__title'>© 2022 Институт Генплана Москвы</h4>
+        <h4 className='footer__title'>© 2023 Институт Генплана Москвы</h4>
         <Link className='footer__link' 
               to='#'
               onMouseEnter = {() => {onCursor('big')}}
@@ -30,7 +30,7 @@ const Footer = props => {
       </div>
 
       <div className='footer__box'>
-        <h4 className='footer__title'>По вопросам: egurvich@genplanmos.ru</h4>
+        <h4 className='footer__title'>По вопросам: e.gnezdilova@genplanmos.ru</h4>
         <div className='footer__links'>
           <Link className='footer__link' 
               to='#'

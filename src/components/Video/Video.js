@@ -1,9 +1,8 @@
 import "./Video.scss"
 import React from 'react';
-import { Player, ControlBar, BigPlayButton } from 'video-react';
-import internshipVideo from '../../videos/praktika.mp4';
-import internshipCover from '../../images/videoCover.jpg';
+import { Player, BigPlayButton } from 'video-react';
 
+import Poster from '../../images/videoPoster.jpg';
 
 
 const Video = () => {
@@ -11,14 +10,15 @@ const Video = () => {
     <section className="video">
       <Player
         playsInline
-        poster      = {internshipCover}
-        src         = {internshipVideo}
+        poster      = {Poster}
+        src         = 'https://www.youtube.com/embed/TH0oCDziVQQ'
         fluid       = {true}
         muted       = {true}
         aspectRatio = "auto"
-        autoPlay    = {true} 
-        loop        = {true}>
-        <ControlBar disableCompletely={true}/>
+        autoPlay    = {false} 
+        preload     = "metadata"
+        loop        = {false}>
+        
         <BigPlayButton position={'center'}/>
       
       

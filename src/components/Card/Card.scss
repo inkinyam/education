@@ -57,56 +57,18 @@
     color: var(--dark-default);
     text-transform: uppercase;
     margin: 0 0 16px;
-    order:2
    } 
   
 
 
-.card__description {
+.card__list {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
   margin: 0;
-  order:3;
-
-  &.card__description_first {
-    order: 1;
-    min-height: 80px;
-    margin-bottom: 16px;
-  }
-}
-
-.card__picture_hidden {
-  display: none;
-}
-
-.card__picture {
-  width: 240px;
-  height: 125px;
-  margin-top: auto;
-  object-fit: cover;
-  object-position: center;
-  display: flex;
-  order: 5;
-  align-self: flex-end;
-  justify-self: flex-end;
-
-}
-
-.card:has(.card__description_first) {
-  height: 400px;
-
-  
-  @media screen and (max-width: 1250px) {
-    height: 600px;
-  }
-
-  
-  @media screen and (max-width: 776px) {
-    height: 500px;
-    max-height: fit-content;
-  }
+  padding: 0 0 0 12px;
+  list-style: '• ';
 
 }

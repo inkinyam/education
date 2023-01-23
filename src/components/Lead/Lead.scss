@@ -29,80 +29,34 @@
   display: flex;
   flex-direction: column;
 
-  span {
-    display: flex;
-    flex-direction: column;
-    @media screen and (max-width: 766px) {
-      column-gap: 5px;
-      margin: 5px 0 0 ;
-      display: none;
-    }
 
-    p {
-      font-family: 'Circe';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 150px;
-      line-height: 97.9%;
-      margin: 0;
-      color: var(--light-default);
-      text-transform: uppercase;
-      display: flex;
-  
-      @media screen and (max-width: 1180px) {
-        font-size: 126px;
-      }
-  
-      @media screen and (max-width: 990px) {
-        font-size: 100px;
-      }
-  
-      @media screen and (max-width: 766px) {
-        flex-direction: column;
-      }
-    }
-  }
 
   h1 {
     font-family: 'Circe';
     font-style: normal;
     font-weight: 700;
-    font-size: 150px;
-    line-height: 97.9%;
+    font-size: 76px;
+    line-height: 102%;
     margin: 0;
     color: var(--light-default);
     text-transform: uppercase;
     display: flex;
 
     @media screen and (max-width: 1180px) {
-      font-size: 126px;
+      font-size: 60px;
     }
 
     @media screen and (max-width: 990px) {
-      font-size: 100px;
+      font-size: 55px;
     }
 
     @media screen and (max-width: 766px) {
       flex-direction: column;
-      font-size: 56px;
+      font-size: 32px;
     }
   }
 
-  p {
-    display: none;
-
-    @media screen and (max-width: 766px) {
-      display: block;
-      font-family: 'Circe';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 50px;
-      line-height: 97.9%;
-      margin: 0;
-      color: var(--light-default);
-      text-transform: uppercase;
-    }
-  }
+ 
 
 }
 
@@ -114,17 +68,16 @@
   align-items: center;
   width: 196px;
   height: 46px;
-  color: black;
-  background-color: var(--accent-default);
+  color: #fff;
+  background-color: var(--primary-default);
 
   font-weight: 400;
   font-size: 19px;
   line-height: 24px;
   text-transform:initial;
   text-decoration: none;
-  align-self:flex-end;
-  margin-bottom: 31px;
-  margin-left: 40px;
+  align-self:flex-start;
+  margin-top: 24px;
   transition: transform 0.2s ease-in-out;
   
   &:active {

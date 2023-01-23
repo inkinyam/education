@@ -97,7 +97,7 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="phases" 
                   onClick={handleBurgerClick}  
                   smooth={true}  
-                  className='mobileNavigation__link'>Сроки и этапы</Link>   
+                  className='mobileNavigation__link'>О программе</Link>   
           </motion.li>
 
           <motion.li className="mobileNavigation__item"
@@ -105,7 +105,7 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="howItWas" 
                   onClick={handleBurgerClick}
                   smooth={true} 
-                  className='mobileNavigation__link'>Стажировка 2022</Link>   
+                  className='mobileNavigation__link'>Вебинары</Link>   
           </motion.li>
 
           <motion.li className="mobileNavigation__item"
@@ -113,7 +113,7 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="howItWas" 
                   onClick={handleBurgerClick}
                   smooth={true} 
-                  className='mobileNavigation__link'>2021</Link>  
+                  className='mobileNavigation__link'>Лекции в записи</Link>  
           </motion.li>
 
           <motion.li className="mobileNavigation__item"
@@ -121,7 +121,7 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="programs" 
                   onClick={handleBurgerClick}  
                   smooth={true} 
-                  className='mobileNavigation__link'>Программы</Link>  
+                  className='mobileNavigation__link'>Подать заявку</Link>  
           </motion.li>
         </motion.ul>
 

@@ -1,7 +1,7 @@
 import './About.scss';
 import Title from '../Title/Title';
 import CardList from '../CardList/CardList';
-import SmileyBackground from '../SmileyBackground/SmileyBackground';
+import Card from '../Card/Card';
 import { AboutCardData } from '../../utils/cardInfo';
 const About = () => {
   
@@ -9,9 +9,8 @@ const About = () => {
     <section className='about'>
       <Title title='Как проходит'> </Title>
       <CardList cardData ={AboutCardData}
-                order = {true}/>
+                cardComponent={<Card/>}/>
 
-      <SmileyBackground />
 
     </section>
   )

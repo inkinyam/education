@@ -13,24 +13,12 @@ const leadClassList  = isLeadHide? 'lead_hide': 'lead';
       <div className='lead__content'>
         
           <div className='lead__title'>
-            <h1>Практика</h1> 
-            <span>
-              <p>в&nbsp;Институте</p>
-              <p>Генплана</p>   
-              <p>Москвы 
-                <Link smooth={true}  
+            <h1>Программа повышения <br/> квалификации<br/> «Градостроительная база»</h1> 
+            <Link smooth={true}  
                       to="form" 
                       className='lead__button'  
                       onMouseEnter = {() => onCursor('big')} 
                       onMouseLeave = {onCursor}> 
-                        Заполнить заявку
-                </Link>
-              </p>
-            </span>
-            <p>в&nbsp;Институте Генплана Москвы</p>
-            <Link smooth={true}  
-                      to="form" 
-                      className='lead__button lead__button_mobile'> 
                         Заполнить заявку
             </Link>
           </div>
@@ -39,8 +27,8 @@ const leadClassList  = isLeadHide? 'lead_hide': 'lead';
 
 
         <div className='lead__infoblock'>
-          <p className='lead__info'>ждем студентов, изучающих специальности:</p>
-          <p className='lead__prof'>Архитектор, Инженер, Экономист, Социолог, Эколог, Аналитик, ГИС-специалист, Урбанист</p>
+          <p className='lead__info'>обучающий курс разработкн и проводится</p>
+          <p className='lead__info'>Институтом Генплана Москвы совместно с НИУ МГСУ</p>
         </div>
 
       </div>
