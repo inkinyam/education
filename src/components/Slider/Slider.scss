@@ -1,0 +1,108 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+  margin: 160px auto 0;
+  @media screen and (max-width: 760px) {
+    margin: 80px auto 0;
+  }
+
+  & .slider__list {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+
+    & .slider__slide {
+      flex: 1 0 100%;
+      position: relative;
+
+      & .slider__slide-img {
+        display: flex;
+        margin: 0 auto;
+        max-height: 600px;
+        width: 80%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        object-position: center;
+
+        @media screen and (max-width: 960px) {
+          width: 100%;
+        }
+      }
+
+      & .slider__slide-text {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  /* ТОЧКИ */
+  & .slider__dots {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+
+    
+    @media screen and (max-width: 960px) {
+      width: 100%;
+    }
+
+    & .slider__dot {
+      background-color:var(--dark-disabled);
+      height: 2px;
+      width: 60px;
+      position: relative;
+      
+      @media screen and (max-width: 960px) {
+        width: 40px;
+      }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: var(--dark-default);
+          z-index: 3;
+        }
+
+      &.selected {
+        &::after {
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+  /* СТРЕЛКИ */
+
+  & .arrows {
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    cursor: none;
+
+    & .arrow {
+      height: 100%;
+      width: 40%;
+
+
+
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.cursor {
+  width: 24px;
+  height: 24px;
+  mix-blend-mode: difference;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 999999999;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background-color 0.2s, 
+              /* border-color 0.2s,  */
+              background-image 0.3s, 
+              width 0.15s cubic-bezier(.58,-0.46,.5,1.37), 
+              height 0.15s cubic-bezier(.58,-0.46,.5,1.37);
+  @media screen and (max-width: 1000px) {
+    display: none;
+  }
+  
+}
+
+.cursor-hide{
+  display: none;
+}
+
+.cursor-big {
+  height: 100px;
+  width: 100px;
+}
+
+
+
+
+.cursor-pensil {
+  height: 40px;
+  width: 40px;
+  background-image: url(../../images/pensil.svg);
+  background-repeat: no-repeat;
+  background-size:  50%;
+  background-position: center;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  color: #DAE856;
+}
+
+.cursor-left {
+  height: 100px;
+  width: 100px;
+  background-image: url(../../images/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-size:  50%;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.cursor-right {
+  height: 100px;
+  width: 100px;
+  background-image: url(../../images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size:  50%;
+  background-position: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.cursor-drag{
+  height: 100px;
+  width: 100px;
+  background-image: url(../../images/drag.svg);
+  background-repeat: no-repeat;
+  background-size:  50%;
+  background-position: center;
+  background-color: #DAE856;
+  mix-blend-mode: unset;
+}
+
+.cursor-more {
+  height: 100px;
+  width: 100px;
+  background-image: url(../../images/more.svg);
+  background-repeat: no-repeat;
+  background-size:  50%;
+  background-position: center;
+  background-color: #DAE856;
+  mix-blend-mode: unset;
+}

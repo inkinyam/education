@@ -1,0 +1,72 @@
+@import url(../src/vendors/normalize.css);
+@import url(../src/vendors/fonts.css);
+@import url(../src/utils/animation.scss);
+
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import '~video-react/styles/scss/video-react';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+/* *{
+  cursor: none;    
+}  */
+
+*::selection {
+ background-color: #d9e856c2;
+ color: var(--dark-default);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Circe', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var( --dark-default);
+  position: relative;
+}
+
+:root {
+
+  /*СИНИЕ*/
+  --primary-default: #2D8BF1;
+  --primary-hovered: #106CD1;
+  --primary-onclick: #0C5FBA;
+  --primary-disabled: #9CCBFF;
+
+  /*ЖЕЛТЫЕ*/
+  --accent-default: #DAE856;
+  --accent-hovered: #CADF00;
+  --accent-onclick: #BED200;
+  --accent-disabled: #F0F0F4;
+
+  /*ЦВЕТ ТЕКСТА - ЧЕРНЫЙ*/
+  --dark-default: #1B1B1B;
+  --dark-hovered: #605D7C;
+  --dark-onclick: #1B1B1B;
+  --dark-disabled: #9D9CB5;
+
+  /*ЦВЕТ ТЕКСТА - БЕЛЫЙ */
+  --light-default: #F6F6F7;
+  --light-hovered: #F0F0F4;
+  --light-onclick: #FFFFFF;
+  --light-disabled: #DFDFDF;
+
+
+  --transition-duration: 0.4s;
+  --transition-timing: ease-in-out;
+}
+
+
+@keyframes bganimation {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+

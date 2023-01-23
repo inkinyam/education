@@ -1,0 +1,16 @@
+@import "~video-react/styles/scss/video-react";
+
+.video {
+  width: 100%;
+  height: fit-content;
+  max-height: 780px;
+  background-color: rgba(176, 149, 179, 0.3);
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.video-react {
+  position: relative;
+  z-index: 5;
+}

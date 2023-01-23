@@ -1,0 +1,140 @@
+.mobileNavigation {
+  display: none;
+  
+
+  &_opened {
+    width: 100%;    
+    margin: 0 auto;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: fixed;
+    background-color: var(--dark-default);
+    z-index: 555;
+
+    overflow: hidden;
+  }
+
+  .layout__bg {
+    position: relative;
+    z-index: 1;
+    height: 0;
+  }
+}
+
+.mobileNavigation__link {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: var(--light-default);
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-default);
+    transition: width 0.4s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.mobileNavigation__logo {
+  width: 80px;
+  height: 80px;
+}
+
+.mobileNavigation__burger {
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+
+  svg {
+    stroke: white;
+    stroke-width: 2px;
+  }
+}
+
+.mobileNavigation__menu {
+  min-width: 0;
+  background-color: transparent;
+  height: calc(100vh - 130px);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  row-gap:  20vh;
+
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+
+ }
+
+.mobileNavigation__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 90px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.mobileNavigation__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+
+ 
+  .mobileNavigation__link {
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &:nth-of-type(2) {
+
+    margin-bottom: 40px;
+    flex-direction: row-reverse;
+    column-gap: 20px;
+
+    .mobileNavigation__link {
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.layout{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: var(--dark-default);
+  overflow: hidden;
+
+  .layout__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .layout__point {
+    display: block;
+    width: 6px;
+    height: 6px;
+    transform: translate(-40%, -40%);
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .layout__horisontal {
+    position: absolute;
+    width: 90%;
+    bottom: 5%;
+    right: 5%;
+    height: 2px;
+    background-color: #fff;
+    z-index: 2;
+  }
+
+  .layout__vertical {
+    position: absolute;
+    height: 85%;
+    width: 2px;
+    
+    bottom: 5%;
+    right: 5%;
+    background-color: #fff;
+    z-index: 20;
+  }
+
+  .layout__big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 1700px;
+    height: 1700px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%, #2D8BF1 0deg, #0B233C 213.75deg, #000000 360deg);
+    filter: blur(120px);
+    animation: bigRoundAnimation 60s ease infinite forwards;
+    transform-origin: center center;
+  }
+
+  .layout__middle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+  
+    /*левый*/
+    &.r1 {
+      top: 50%;
+      left: 0;
+      background: radial-gradient(50% 50% at 50% 50%, #3181d6 0%, #042547 63.54%, #000000 100%);
+      filter: blur(100px);
+
+      transform-origin: 200px 300px;
+      animation: middleLeftRoundAnimation 30s ease-in-out infinite forwards;
+    }
+
+  /*правый*/
+    &.r2 {
+      top: 40%;
+      left: 40%;
+      background: conic-gradient(from 180deg at 50% 50%, #2D8BF1 0deg, #0B233C 213.75deg, #000000 360deg);
+      filter: blur(60px);
+      transform: rotate(-90deg);
+      animation: small2RoundAnimation 30s ease-in-out infinite alternate;
+    }
+
+    &.r3 {
+      top: 10%;
+      left: 10%;
+      transform-origin: 50px 40px;
+      background: conic-gradient(from 180deg at 50% 50%, #2D8BF1 0deg, #0B233C 213.75deg, #000000 360deg);
+      filter: blur(60px);
+      transform: rotate(-90deg);
+      animation: middleRightRoundAnimation 30s ease-in-out infinite forwards;
+    }
+
+    &.r4 {
+      top: 58%;
+      left: 0;
+
+      transform-origin: 22px;
+
+      background: conic-gradient(from 180deg at 50% 50%, #2D8BF1 0deg, #0B233C 213.75deg, #000000 360deg);
+      filter: blur(60px);
+      transform: rotate(-90deg);
+      animation: middleRightRoundAnimation 32s ease-in-out infinite forwards;
+    }
+  }
+
+  .layout__small {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50% at 50% 50%, #0C5FBA 0%, #09488D 63.54%, #000000 100%);
+    filter: blur(100px);
+    transform-origin: 60% 60%;
+    animation: smallRoundAnimation 25s ease-in-out infinite forwards;
+  }
+}
+
+
