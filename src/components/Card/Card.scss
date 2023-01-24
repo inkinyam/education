@@ -1,5 +1,5 @@
 .card {
-  flex-basis: calc(50% - 14px);
+ 
   min-height: 240px;
   max-height: 440px;
   position: relative; 
@@ -14,13 +14,6 @@
     max-height: 600px;
   }
 
-  @media screen and (max-width: 776px) {
-    flex-basis: 100%;
-  }
-
-
-   
-  
 }
 
 

@@ -15,7 +15,12 @@ const Card = ({props}) => {
     <li ref={ref}  className={cardClassList}>
       <h4 className='card__title'>{props.title}</h4>
       <ul className='card__list'>
-        <li>{ props.info }</li>
+        {props.info.map((item, indx) => {
+          return (
+            <li key={indx}> { item } </li>
+          )
+        })}
+        
       </ul>
 
 

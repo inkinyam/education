@@ -14,19 +14,49 @@ const FAQCard = ({question, answer, ...props}) => {
     triggerOnce: true
   });
 
-  const FAQcardClassList = inView? 'faq__card animated' : 'faq__card '
+  const FAQCardClassList = inView? 'faq__card animated' : 'faq__card '
 
 
   return (
-  <motion.div ref={ref} className = {FAQcardClassList}
+  <motion.div ref={ref} className = {FAQCardClassList}
               animate   = {isOpen ? "open" : "closed"}
               onClick = {() => {setIsOpen(!isOpen) }}
               onMouseEnter = {() => {onCursor('more')}}
               onMouseLeave = {onCursor}>
 
-    <h4 className='faq__title '>{question}</h4>
+    <div className='faq__cardtitle' >
+      <h4 className='faq__title '>{question}</h4>
+      <motion.div className ='faq__icon' 
+                  variants  = {{
+                      open: { 
+                        rotate: 45,
+                        transition: {
+                          type: "ease",
+                          bounce: 0,
+                          duration: 0.5,
+                          delayChildren: 0.3,
+                          staggerChildren: 0.05
+                        }
+                      }, 
+                      close: { 
+                        rotate: 0,
+                        transition: {
+                          type: "ease",
+                          bounce: 0,
+                          duration: 0.7,
+                          delayChildren: 0.3,
+                          staggerChildren: 0.05
+                        } }
+                    }}>
+        <svg viewBox="0 0 24 24">
+          <path d="M12 0V24" stroke="black" strokeWidth="2"/>
+          <path d="M24 12L-9.53674e-07 12" stroke="black" strokeWidth="2"/>
+        </svg>
+      </motion.div>
+    </div>
+   
 
-    <motion.div className = 'faq_text' 
+    <motion.div className = 'faq__text' 
                 variants={{
                   open: {
                     height: 'auto',

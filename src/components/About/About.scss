@@ -1,10 +1,10 @@
 .about {
   max-width: 90%;
-  margin: 80px auto 160px;
+  margin: 80px auto ;
   z-index: 3;
   position: relative;
 
   @media screen and (max-width: 760px) {
-    margin: 40px auto 80px;
+    margin: 40px auto;
   }
 }
