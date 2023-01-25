@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/education/static/css/main.2da40eac.css",
-    "main.js": "/education/static/js/main.3ba861b1.js",
+    "main.css": "/education/static/css/main.f6539d2f.css",
+    "main.js": "/education/static/js/main.ccd233b8.js",
     "static/js/787.635aedaa.chunk.js": "/education/static/js/787.635aedaa.chunk.js",
     "static/media/circe.ttf": "/education/static/media/circe.814e4dd4329ffdb6c9ed.ttf",
     "static/media/circe_bold.ttf": "/education/static/media/circe_bold.63396ee791f60623acbf.ttf",
@@ -20,12 +20,12 @@
     "index.html": "/education/index.html",
     "static/media/pensil.svg": "/education/static/media/pensil.438300fd812224af9857.svg",
     "static/media/play.svg": "/education/static/media/play.7a2fd9d13566e36231db.svg",
-    "main.2da40eac.css.map": "/education/static/css/main.2da40eac.css.map",
-    "main.3ba861b1.js.map": "/education/static/js/main.3ba861b1.js.map",
+    "main.f6539d2f.css.map": "/education/static/css/main.f6539d2f.css.map",
+    "main.ccd233b8.js.map": "/education/static/js/main.ccd233b8.js.map",
     "787.635aedaa.chunk.js.map": "/education/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2da40eac.css",
-    "static/js/main.3ba861b1.js"
+    "static/css/main.f6539d2f.css",
+    "static/js/main.ccd233b8.js"
   ]
 }
