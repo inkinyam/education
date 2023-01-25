@@ -45,42 +45,42 @@ const VebinarsData = [
   { id: 1,
     topic: 'Тема 1. Подходы к разработке документов территориального планирования',
     lecturer: 'Колонтай А.Н.',
-    lecturerPhoto: 'https://genplanmos.ru/download/aleksandr-nikolaevich-kolontaj/',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D1%82%D0%B0%D0%B9.png&fileId=4072651&x=1920&y=1200&a=true',
     organizer: 'МГСУ'
   },
 
   { id: 2,
     topic: 'Тема 2. Современные вызовы устойчивому развитию городов. Тенденции развития. Мировой и отечественный опыт',
     lecturer: 'Данилина Н.В.',
-    lecturerPhoto: 'https://genplanmos.ru/download/aleksandr-nikolaevich-kolontaj/',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D0%BD%D0%B0.png&fileId=4072652&x=1920&y=1200&a=true',
     organizer: 'МГСУ'
   },
 
   { id: 3,
     topic: 'Тема 3. Анализ и планирование исторических территорий',
     lecturer: 'Верховский Д.А.',
-    lecturerPhoto: 'https://genplanmos.ru/download/aleksandr-nikolaevich-kolontaj/',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.png&fileId=4072667&x=1920&y=1200&a=true',
     organizer: 'Институт Генплана Москвы'
   },
 
   { id: 4,
     topic: 'Тема 4. Прикладные методы градостроительных исследований / Аналитические инструменты решения задач территориального управления',
     lecturer: 'Мустафин Г.М.',
-    lecturerPhoto: 'https://genplanmos.ru/static/thumbs/75/28/112x112_2_normal_0de40fe58257862f1859ef631d77.jpg',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9C%D1%83%D1%81%D1%82%D0%B0%D1%84%D0%B8%D0%BD.png&fileId=4072668&x=1920&y=1200&a=true',
     organizer: 'Институт Генплана Москвы'
   },
 
   { id: 5,
     topic: 'Тема 5. Развитие транспортных систем города',
     lecturer: 'Крестмейн М.Г.',
-    lecturerPhoto: 'https://genplanmos.ru/static/thumbs/85/d0/190x190_2_normal_d76f61d5185466b67071c45f64ff.png',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%BC%D0%B5%D0%B9%D0%BD.png&fileId=4072669&x=1920&y=1200&a=true',
     organizer: 'Институт Генплана Москвы'
   },
 
   { id: 6,
     topic: 'Тема 6. Определение перспективной экономической специализации территорий города исходя из анализа кластеризации существующих экономических комплексов',
     lecturer: 'Гук Т.Н.',
-    lecturerPhoto: 'https://genplanmos.ru/static/thumbs/fe/14/190x190_2_normal_3b1a5d75d46da7ee4a1867816192.png',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%93%D1%83%D0%BA.png&fileId=4072670&x=1920&y=1200&a=true',
     organizer: 'Институт Генплана Москвы'
   },
 
@@ -94,7 +94,7 @@ const VebinarsData = [
   { id: 8,
     topic: 'Тема 8. Новеллы и актуальное правоприменение градостроительного законодательства',
     lecturer: 'Валяев О.В.',
-    lecturerPhoto: 'https://genplanmos.ru/download/aleksandr-nikolaevich-kolontaj/',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0.png&fileId=4074909&x=1920&y=1200&a=true',
     organizer: 'Институт Генплана Москвы'
   },
 ]
