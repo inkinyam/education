@@ -25,10 +25,10 @@ const handleBurgerClick =() => {
         </a>
         <nav className="navigation__list">
         <Link to="about"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Как проходит</Link> 
-        <Link to="phases"    smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >О программе</Link> 
-        <Link to="howItWas"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Вебинары</Link> 
-        <Link to="howItWas"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Лекции в записи</Link> 
-        <Link to="programs"  smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Подать заявку</Link> 
+        <Link to="video"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >О программе</Link> 
+        <Link to="vebinar"   smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Вебинары</Link> 
+        <Link to="accordion" smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Лекции в записи</Link> 
+        <Link to="form"      smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Подать заявку</Link> 
       </nav>
 
       <button className="navigation__burger" onClick={handleBurgerClick}>

@@ -53,13 +53,12 @@
   font-family: 'Circe';
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 26px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   color: var(--dark-default);
-  margin: 30px 0 24px;
   max-width: 60%;
   @media screen and (max-width: 1100px) {
     max-width: 80%;
@@ -76,11 +75,18 @@
   line-height: 24px; 
   color: var(--dark-default);
 
+  ul {
+    margin: 0;
+  }
+
   @media screen and (max-width: 1000px) {
     max-width: 90%;
   }
 
-  ul {
-    margin: 0;
+
+  @media screen and (max-width: 766px) {
+    font-size: 18px;
+    line-height: 26px;
   }
+
 }

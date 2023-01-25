@@ -21,6 +21,9 @@
   @media screen and (max-width: 1240px) {
     justify-content: flex-start;
   }
+  @media screen and (max-width: 550px) {
+    row-gap: 40px;
+  }
 }
 
 .footer__box {

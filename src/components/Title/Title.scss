@@ -8,4 +8,10 @@
   position: relative;
   z-index: 4;
   margin: 0 0 40px;
+
+  @media screen and (max-width: 766px) {
+    font-size: 26px;
+    line-height: 34px;
+    margin: 0 0 24px;
+  }
 }

@@ -87,7 +87,7 @@ const VebinarsData = [
   { id: 7,
     topic: 'Тема 7. Управление проектами территориального развития и взаимодействие с жителями',
     lecturer: 'Пенкин А.С.',
-    lecturerPhoto: 'https://portal/img/photo/175x233/apenkin.jpg',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/9NixL6M8RTeBtHK?x=1908&y=739&a=true&file=%25D0%259F%25D0%25B5%25D0%25BD%25D0%25BA%25D0%25B8%25D0%25BD.png&scalingup=0',
     organizer: 'Институт Генплана Москвы'
   },
 

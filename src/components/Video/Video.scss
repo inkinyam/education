@@ -1,6 +1,7 @@
 @import "~video-react/styles/scss/video-react";
 
 .video {
+  padding-top: 40px;
   .title {
     max-width: 90%;
     margin-left: auto;
@@ -16,6 +17,13 @@
   position: relative;
   z-index: 4;
   overflow: hidden;
+  @media screen  and (max-width: 1024px) {
+   min-height:400px; 
+  }
+
+  @media screen  and (max-width: 766px) {
+    min-height: 205px;
+  }
 
 }
 
@@ -23,3 +31,7 @@
   position: relative;
   z-index: 5;
 }
+
+.video-react-poster {
+  background-size: cover !important;
+ }

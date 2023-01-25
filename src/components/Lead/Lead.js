@@ -27,8 +27,7 @@ const leadClassList  = isLeadHide? 'lead_hide': 'lead';
 
 
         <div className='lead__infoblock'>
-          <p className='lead__info'>обучающий курс разработкн и проводится</p>
-          <p className='lead__info'>Институтом Генплана Москвы совместно с НИУ МГСУ</p>
+          <p className='lead__info'>обучающий курс разработан и проводится Институтом Генплана Москвы совместно с НИУ МГСУ</p>
         </div>
 
       </div>

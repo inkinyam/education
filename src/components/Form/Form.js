@@ -47,24 +47,7 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
       <section className='form' >
         <form  className={formClassList} noValidate onSubmit = {handleSubmitForm}  ref={ref}>
           <h4 className='form__title'>Подать заявку на программу повышения квалификации</h4>
-          <fieldset className='form__fieldset'>
-            <span className='form__text'>Имя</span>
-            <label htmlFor='name' className='form__label'> 
-              <input className={`form__input ${inputControl?.errors?.name && "form__input_error"}`}
-                     placeholder = "Анна"
-                     type        = "text"
-                     minLength   = "2" 
-                     maxLength   = "100" 
-                     required 
-                     pattern     = "[A-Za-zА-Яа-яЁё\s-]+"
-                     value       = {inputControl?.values?.name || ''}
-                     onChange    = {inputControl.handleChange}
-                     name        = "name"
-                     id          = "name"/>
-              <span className={`form__err ${inputControl?.errors?.name && "form__err_show"}`}>{name}</span>
-            </label>
-          </fieldset>
-         
+
           <fieldset className='form__fieldset'>
             <span className='form__text'>Фамилия</span>
             <label htmlFor='surname' className='form__label'> 
@@ -80,6 +63,24 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
                      name        = "surname"
                      id          = "surname"/>
               <span className={`form__err ${inputControl?.errors?.surname && "form__err_show"}`}>{surname}</span>
+            </label>
+          </fieldset>
+
+          <fieldset className='form__fieldset'>
+            <span className='form__text'>Имя</span>
+            <label htmlFor='name' className='form__label'> 
+              <input className={`form__input ${inputControl?.errors?.name && "form__input_error"}`}
+                     placeholder = "Анна"
+                     type        = "text"
+                     minLength   = "2" 
+                     maxLength   = "100" 
+                     required 
+                     pattern     = "[A-Za-zА-Яа-яЁё\s-]+"
+                     value       = {inputControl?.values?.name || ''}
+                     onChange    = {inputControl.handleChange}
+                     name        = "name"
+                     id          = "name"/>
+              <span className={`form__err ${inputControl?.errors?.name && "form__err_show"}`}>{name}</span>
             </label>
           </fieldset>
 
@@ -140,7 +141,7 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
             <span className='form__text'>Организация</span>
             <label htmlFor='organization' className='form__label'> 
               <input className={`form__input ${inputControl?.errors?.organization && "form__input_error"}`}
-                     placeholder = "ООО Рога и копыта"
+                     placeholder = "ООО «Архитектура и Ко»"
                      type        = "text"
                      minLength   = "2" 
                      maxLength   = "100" 
@@ -162,10 +163,8 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
                   >
                          Отправить заявку
           </button>
-
-
         </form>
-   
+      <p className='form__sended'>Спасибо! <br/>Мы получили вашу заявку и обязательно свяжемся с вами.</p>
      </section>
  
   )

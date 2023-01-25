@@ -41,7 +41,7 @@ const AccodionCard = ({data, ...props}) => {
   const cardVariants = {
     open: {
       height: 'auto',
-      marginBottom: 16, 
+      marginBottom: 30, 
       transition: {
         type: "spring",
         bounce: 0,

@@ -8,10 +8,12 @@
   flex-direction: column;
   position: relative;
   z-index: 2;
+
 }
 
 
 .AnimatedText__text {
+  width: 90%;
   max-width: 645px;
   margin: 0 auto 16px;
 
@@ -54,6 +56,12 @@
       overflow: hidden;
     }
   }
+
+  @media screen and (max-width: 766px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
 }
 
  @for $i from 1 through 40 {
@@ -61,3 +69,6 @@
     transition-delay: #{$i/4}s;
   }
 } 
+
+
+

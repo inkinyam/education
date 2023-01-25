@@ -13,6 +13,7 @@ const AnimatedText = ({text}) => {
  
   return (
   <section className="AnimatedText">
+
     <div ref={ref}  className={textClassNames}>
                 
     {

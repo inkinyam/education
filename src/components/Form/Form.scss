@@ -1,6 +1,8 @@
 .form {
   max-width: 90%;
-  margin: 80px auto;
+  margin: 40px auto;
+  position: relative;
+  z-index: 4;
 }
 
 
@@ -12,7 +14,7 @@
   max-width: 644px;
   margin: 0 auto;
   width: 90%;
-  padding: 0 16px;
+  padding: 0 16px 0 0;
   box-sizing: border-box;
 
   @media screen and (max-width: 800px) {
@@ -23,8 +25,7 @@
     width: 100%;
   }
 
-
-  
+ 
   &.animated {
     &:before {
       content: '';
@@ -48,6 +49,17 @@
       animation: cardRightLine 1s ease-in 1s forwards;
     }
   }
+
+  @media screen and (max-width: 759px) {
+    padding: 0 0 0 0;
+    &:before {
+      animation: none !important;
+    }
+  
+    &::after {
+      animation: none !important;
+    }
+  }
 }
 
 .form__fieldset {
@@ -56,6 +68,12 @@
  display: flex;
  flex-direction: row;
  column-gap: 4px;
+ width: 100%;
+ max-width: 100%;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 
 .form__title {
@@ -67,6 +85,16 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (max-width: 766px) {
+    font-size: 26px;
+    line-height: 34px;
+    text-align: start;
+  }
+
+  @media screen and (max-width: 500px) {
+    margin-top: 0;
+  }
 }
 
 .form__text {
@@ -79,10 +107,9 @@
   text-transform: uppercase;
   white-space: nowrap;
 
-  span {
-    @media screen and (max-width: 759px)  {
-      display: none;
-    }
+  @media screen and (max-width: 376px) {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -93,7 +120,8 @@
 }
 
 .form__input {
-  border: 2px solid transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
   background-color: transparent;
   width: auto;
   border-bottom-color: var(--dark-default);
@@ -121,7 +149,15 @@
     background-position: right 5px center;
     background-repeat: no-repeat;
   }
-  
+
+  @media screen and (max-width: 766px) {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 }
 
 .form__err {
@@ -187,5 +223,25 @@
     color: var(--light-default);
   }
 
+  
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
+
 }
 
+.form__sended {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #4BB96A;
+  margin: 16px 0 0 ;
+
+  @media screen and (max-width: 376px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

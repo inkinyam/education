@@ -60,8 +60,8 @@ const FAQCard = ({question, answer, ...props}) => {
                 variants={{
                   open: {
                     height: 'auto',
-                    marginTop: 16,
-                    marginBottom: 16, 
+                    marginTop: 40,
+                    marginBottom: 24, 
                     transition: {
                       type: "spring",
                       bounce: 0,

@@ -2,7 +2,7 @@ import React from "react";
 import cx from "classnames";
 export const CursorContext = React.createContext("cursorContext");
 
-const SUPPORTED_CURSORS = [false, 'big', 'more', 'pensil', 'right', 'left', 'drag', 'hide', 'play'];
+const SUPPORTED_CURSORS = [false, 'big', 'more', 'pensil', 'hide', 'play'];
 
 
 

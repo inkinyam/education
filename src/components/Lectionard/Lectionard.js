@@ -1,8 +1,11 @@
 import './Lectionard.scss';
+import withCursor from "../../HOCs/withCursor";
 
-const Lectionard = ({data}) => {
+const Lectionard = ({data, ...props}) => {
+  const { onCursor } = props.context;
+
   return (
-    <li className='lectioncard'>
+    <li className='lectioncard' onMouseEnter={onCursor}>
       <div className='lectioncard__topic'>
         <small className='lectioncard__tag'>Тема</small>
         <h4 className='lectioncard__title'>{data.topic}</h4>
@@ -26,4 +29,4 @@ const Lectionard = ({data}) => {
   )
 }
 
-export default Lectionard;
+export default withCursor(Lectionard);
