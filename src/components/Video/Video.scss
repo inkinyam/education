@@ -17,6 +17,11 @@
   position: relative;
   z-index: 4;
   overflow: hidden;
+
+  &:hover {
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer;
+  }
+
   @media screen  and (max-width: 1024px) {
    min-height:400px; 
   }
@@ -30,8 +35,21 @@
 .video-react {
   position: relative;
   z-index: 5;
+  &:hover {
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer;
+  }
 }
 
 .video-react-poster {
   background-size: cover !important;
+ }
+
+ .video-react-video {
+  &:hover {
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
+  }
+ }
+
+ .video-react-big-play-button-center {
+    display: none!important;
  }

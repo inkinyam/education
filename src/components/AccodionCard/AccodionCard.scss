@@ -38,6 +38,9 @@
   box-sizing: border-box;
   padding-right: 24px;
   box-sizing: border-box;
+  &:hover {
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer;
+  }
 }
 
 .accordion__title {

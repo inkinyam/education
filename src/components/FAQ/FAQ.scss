@@ -11,5 +11,9 @@
 .faq__cards {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 24px;
+  @media screen and (max-width: 1023px) {
+    row-gap: 40px;
+  }
+ 
 }

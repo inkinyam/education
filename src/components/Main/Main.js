@@ -26,11 +26,17 @@ const Main = () => {
             <Video/>
             <Vebinar/>
             <Accodion/>
-            <div className='main__bg'>
+            
+            <div className='main__compose'>
+              <div className='main__layout'>
+                <div className='main__bg'></div>
+              </div>
+             
               <FAQ/>
               <AnimatedText  text='Обучающий курс разработан и проводится Институтом Генплана Москвы совместно с НИУ МГСУ. Выдается диплом о повышении квалификации государственного образца.'/>
               <Form />
             </div>
+
           </main>
           <Footer/>
         </div>
