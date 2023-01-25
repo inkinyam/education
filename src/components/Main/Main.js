@@ -11,9 +11,19 @@ import Footer from '../Footer/Footer';
 import Accodion from '../Accodion/Accodion';
 import Form from '../Form/Form'
 import React from 'react';
+import api from '../../utils/Api';
 
 const Main = () => {
   const [isLoading, setIsLoading] = React.useState(false);
+  const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false);
+
+  const handleSubmitForm = ({surname, name, patronymic, email, phone, organization }) => {
+    api.postFormData(surname, name, patronymic, email, phone, organization)
+        .then(()=> { 
+          setIsSuccesFormPost(true) 
+        })
+        .catch((err) => { console.log(err) });
+  }
 
 
   return (     
@@ -34,7 +44,9 @@ const Main = () => {
              
               <FAQ/>
               <AnimatedText  text='Обучающий курс разработан и проводится Институтом Генплана Москвы совместно с НИУ МГСУ. Выдается диплом о повышении квалификации государственного образца.'/>
-              <Form />
+              <Form  onSubmit = {handleSubmitForm}
+                     isPosted = {isSuccesFormPost}
+                     setIsPosted = {setIsSuccesFormPost}/>
             </div>
 
           </main>

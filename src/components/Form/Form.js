@@ -11,7 +11,7 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
   const inputControl          = useInputValidator();
   const [isValid, setIsValid] = React.useState(false);
 
-  const { name, surname, patronymic, phone, email, organization } = inputControl.errors;
+  const { surname, name, patronymic, email, phone, organization } = inputControl.errors;
 
 
 
@@ -29,9 +29,16 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
 
   const handleSubmitForm = (e) => {
     e.preventDefault();
-    let {name, surname, patronymic, phone, email, organization} = inputControl.values;
+    let {surname, name, patronymic, email, phone, organization} = inputControl.values;
     isValid
-      ? onSubmit({   }) 
+      ? onSubmit({ 
+        surname: surname,
+        name: name,
+        patronymic: patronymic,
+        email: email,
+        phone: phone,
+        organization: organization
+       }) 
       : console.log("ERROR: поля не заполнены");
 
       setTimeout(() => {
@@ -41,7 +48,8 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
   }
 
   const formClassList = inView? 'form__form animated' : 'form__form ';
-  const submitButtonClassList = !isValid? 'form__button' : isPosted? 'form__button form__button_click' : 'form__button form__button_valid';                        
+  const submitButtonClassList = !isValid? 'form__button' : isPosted? 'form__button form__button_click' : 'form__button form__button_valid';    
+  const messageClassName = isPosted? 'form__sended form__succes_show' : 'form__sended';                    
  
   return ( 
       <section className='form' >
@@ -164,7 +172,7 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
                          Отправить заявку
           </button>
         </form>
-      <p className='form__sended'>Спасибо! <br/>Мы получили вашу заявку и обязательно свяжемся с вами.</p>
+      <p className={messageClassName}>Спасибо! <br/>Мы получили вашу заявку и обязательно свяжемся с вами.</p>
      </section>
  
   )
