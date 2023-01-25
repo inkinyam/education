@@ -24,14 +24,14 @@ const Main = () => {
           setIsSuccesFormPost(true);
 
           setTimeout(() => {
-            setIsSuccesFormPost(false)
+            setIsSuccesFormPost(false);
           }, 5000);
         })
         .catch((err) => { 
           setIsErrorFormPost(true);
 
           setTimeout(() => {
-            setIsErrorFormPost(false)
+            setIsErrorFormPost(false);
           }, 5000);
           console.log(err) });
   }
@@ -54,7 +54,7 @@ const Main = () => {
               </div>
              
               <FAQ/>
-              <AnimatedText  text='Обучающий курс разработан и проводится Институтом Генплана Москвы совместно с НИУ МГСУ. Выдается диплом о повышении квалификации государственного образца.'/>
+              <AnimatedText  text='Обучающий курс разработан и проводится Институтом Генплана Москвы совместнопс НИУ МГСУ. Выдается диплом о повышении квалификации государственного образца.'/>
               <Form  onSubmit = {handleSubmitForm}
                      isPosted = {isSuccesFormPost}
                      isError  = {isErrorFormPost}

@@ -30,8 +30,7 @@ const Form = ({onSubmit, isPosted, isError, setIsPosted,  ...props}) => {
   const handleSubmitForm = (e) => {
     e.preventDefault();
     let {surname, name, patronymic, email, phone, organization} = inputControl.values;
-    isValid
-      ? onSubmit({ 
+    onSubmit({  
         surname: surname,
         name: name,
         patronymic: patronymic,
@@ -39,9 +38,9 @@ const Form = ({onSubmit, isPosted, isError, setIsPosted,  ...props}) => {
         phone: phone,
         organization: organization
        }) 
-      : console.log("ERROR: поля не заполнены");
-
   }
+
+
 
   const formClassList = inView? 'form__form animated' : 'form__form ';
   const submitButtonClassList = !isValid? 'form__button' : isPosted? 'form__button form__button_click' : 'form__button form__button_valid';    
