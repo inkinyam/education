@@ -16,13 +16,24 @@ import api from '../../utils/Api';
 const Main = () => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false);
+  const [isErrorFormPost, setIsErrorFormPost] = React.useState(false);
 
   const handleSubmitForm = ({surname, name, patronymic, email, phone, organization }) => {
     api.postFormData(surname, name, patronymic, email, phone, organization)
         .then(()=> { 
-          setIsSuccesFormPost(true) 
+          setIsSuccesFormPost(true);
+
+          setTimeout(() => {
+            setIsSuccesFormPost(false)
+          }, 5000);
         })
-        .catch((err) => { console.log(err) });
+        .catch((err) => { 
+          setIsErrorFormPost(true);
+
+          setTimeout(() => {
+            setIsErrorFormPost(false)
+          }, 5000);
+          console.log(err) });
   }
 
 
@@ -46,6 +57,7 @@ const Main = () => {
               <AnimatedText  text='Обучающий курс разработан и проводится Институтом Генплана Москвы совместно с НИУ МГСУ. Выдается диплом о повышении квалификации государственного образца.'/>
               <Form  onSubmit = {handleSubmitForm}
                      isPosted = {isSuccesFormPost}
+                     isError  = {isErrorFormPost}
                      setIsPosted = {setIsSuccesFormPost}/>
             </div>
 

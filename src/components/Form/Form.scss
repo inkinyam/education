@@ -257,3 +257,25 @@
     opacity: 1;
   }
 }
+
+.form__errormessage{
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #f30b0b;
+  margin: 16px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  @media screen and (max-width: 376px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &_show {
+    opacity: 1;
+  }
+}

@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import withCursor from "../../HOCs/withCursor";
 
 
-const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
+const Form = ({onSubmit, isPosted, isError, setIsPosted,  ...props}) => {
   const { onCursor } = props.context;
 
   const inputControl          = useInputValidator();
@@ -41,15 +41,12 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
        }) 
       : console.log("ERROR: поля не заполнены");
 
-      setTimeout(() => {
-        inputControl.resetForm();
-        setIsPosted(false)
-      }, 5000)
   }
 
   const formClassList = inView? 'form__form animated' : 'form__form ';
   const submitButtonClassList = !isValid? 'form__button' : isPosted? 'form__button form__button_click' : 'form__button form__button_valid';    
   const messageClassName = isPosted? 'form__sended form__succes_show' : 'form__sended';                    
+  const messageErrorClassName = isError? 'form__errormessage form__errormessage_show' : 'form__errormessage';                    
  
   return ( 
       <section className='form' >
@@ -173,6 +170,7 @@ const Form = ({onSubmit, isPosted,setIsPosted,  ...props}) => {
           </button>
         </form>
       <p className={messageClassName}>Спасибо! <br/>Мы получили вашу заявку и обязательно свяжемся с вами.</p>
+      <p className={messageErrorClassName}>Что-то пошло не так, пожалуйста, попробуйте позднее</p>
      </section>
  
   )
