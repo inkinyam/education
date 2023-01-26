@@ -1,6 +1,6 @@
 .form {
   max-width: 90%;
-  margin: 40px auto;
+  margin: 40px auto 20px;
   position: relative;
   z-index: 4;
 }
@@ -244,7 +244,7 @@
   line-height: 24px;
   text-align: center;
   color: #4BB96A;
-  margin: 16px 0 0 ;
+  margin: 8px 0 0 ;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 
@@ -266,13 +266,33 @@
   line-height: 24px;
   text-align: center;
   color: #f30b0b;
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 
   @media screen and (max-width: 376px) {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  &_show {
+    opacity: 1;
+  }
+}
+
+.form__buttonbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.form__svg {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+
+  path{
+    fill: #2D8BF1;
   }
 
   &_show {

@@ -14,17 +14,21 @@ import React from 'react';
 import api from '../../utils/Api';
 
 const Main = () => {
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false);
-  const [isErrorFormPost, setIsErrorFormPost] = React.useState(false);
+  const [isLoading, setIsLoading] = React.useState(false); //лоадер для страницы
+  const [isSucces, setIsSucces] = React.useState(false);  // если все прошло удачно, форму очищаем
+  const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false); // для того, чтобы показать сообщение об удачной отправке формы
+  const [isErrorFormPost, setIsErrorFormPost] = React.useState(false); //для того, чтобы показать ошибку при отправке формы
+  const [isFormPosting, setIsFormPosting] = React.useState(false); //для лоадера загрузки чтобы показать что форма отправляется
 
   const handleSubmitForm = ({surname, name, patronymic, email, phone, organization }) => {
+    setIsFormPosting(true);
     api.postFormData(surname, name, patronymic, email, phone, organization)
         .then(()=> { 
           setIsSuccesFormPost(true);
 
           setTimeout(() => {
             setIsSuccesFormPost(false);
+            setIsSucces(true);
           }, 5000);
         })
         .catch((err) => { 
@@ -33,7 +37,11 @@ const Main = () => {
           setTimeout(() => {
             setIsErrorFormPost(false);
           }, 5000);
-          console.log(err) });
+          console.log(err) })
+
+        .finally(()=> {
+          setIsFormPosting(false);
+        })
   }
 
 
@@ -58,7 +66,9 @@ const Main = () => {
               <Form  onSubmit = {handleSubmitForm}
                      isPosted = {isSuccesFormPost}
                      isError  = {isErrorFormPost}
-                     setIsPosted = {setIsSuccesFormPost}/>
+                     isSucces = {isSucces}
+                     isLoading= {isFormPosting}
+                     />
             </div>
 
           </main>
