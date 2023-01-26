@@ -5,6 +5,7 @@ import Loader from '../Loader/Loader';
 import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Video from '../Video/Video';
+/* import VideoBlock from '../VideoBlock/VideoBlock'; */
 import Vebinar from '../Vebinar/Vebinar';
 import FAQ from '../FAQ/FAQ';
 import Footer from '../Footer/Footer';
@@ -53,7 +54,9 @@ const Main = () => {
          <Layout/>
           <main className = 'main'>
             <About />
-            <Video/>
+            <Video />
+
+
             <Vebinar/>
             <Accodion/>
             

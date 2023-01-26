@@ -17,7 +17,7 @@ const Video = ({...props}) => {
         <Player
           playsInline
           poster      = {Poster}
-          src         = 'https://www.youtube.com/embed/TH0oCDziVQQ'
+          src         = 'http://kmv.genplanmos.ru/static/video/praktika_6_Mb.mp4'
           fluid       = {true}
           muted       = {true}
           aspectRatio = "auto"

@@ -1,0 +1,55 @@
+@import "~video-react/styles/scss/video-react";
+
+.video {
+  padding-top: 40px;
+  .title {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.video__video {
+  width: 100%;
+  height: fit-content;
+  aspect-ratio: 16/9;
+  background-color: rgba(176, 149, 179, 0.3);
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+
+  &:hover {
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer;
+  }
+
+  @media screen  and (max-width: 1024px) {
+   min-height:400px; 
+  }
+
+  @media screen  and (max-width: 766px) {
+    min-height: 205px;
+  }
+
+}
+
+.video-react {
+  position: relative;
+  z-index: 5;
+  &:hover {
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer;
+  }
+}
+
+.video-react-poster {
+  background-size: cover !important;
+ }
+
+ .video-react-video {
+  &:hover {
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
+  }
+ }
+
+ .video-react-big-play-button-center {
+    display: none!important;
+ }
