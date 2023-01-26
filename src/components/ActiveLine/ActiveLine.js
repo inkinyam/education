@@ -23,7 +23,7 @@ const ActiveLine = () => {
     };
       if ( width <= 580 ) {
         setPathWay(smallPath);
-        setXPosition('20%');
+        setXPosition('0%');
         setYPosition('70%');
       } 
 

@@ -10,6 +10,7 @@ import FAQ from '../FAQ/FAQ';
 import Footer from '../Footer/Footer';
 import Accodion from '../Accodion/Accodion';
 import Form from '../Form/Form'
+import Up from '../Up/Up';
 import React from 'react';
 import api from '../../utils/Api';
 
@@ -62,7 +63,7 @@ const Main = () => {
               </div>
              
               <FAQ/>
-              <AnimatedText  text='Обучающий курс разработан и проводится Институтом Генплана Москвы совместнопс НИУ МГСУ. Выдается диплом о повышении квалификации государственного образца.'/>
+              <AnimatedText  text='Обучающий курс разработан и проводится Институтом Генплана Москвы совместно с НИУ МГСУ. Выдается диплом о повышении квалификации государственного образца.'/>
               <Form  onSubmit = {handleSubmitForm}
                      isPosted = {isSuccesFormPost}
                      isError  = {isErrorFormPost}
@@ -74,6 +75,7 @@ const Main = () => {
           </main>
           <Footer/>
         </div>
+        <Up />
     </>
   )
 }

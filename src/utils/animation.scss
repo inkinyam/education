@@ -5,7 +5,7 @@
   }
 
   to {
-    width: 65%;
+    width: 90%;
   }
   
 }
@@ -16,7 +16,27 @@
   }
 
   to {
-    height: 110%;
+    height: 82%;
+  }
+}
+
+@keyframes leadRightLineMobile {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 75%;
+  }
+}
+
+@keyframes leadPoints {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

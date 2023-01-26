@@ -4,29 +4,31 @@ import "./Up.scss";
 const Up = () => {
 const [isVisible, setIsVisible] = React.useState(false);
 
-  const handleUpClick =() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
+
+const toggleVisible = () => {
+  const scrolled = document.documentElement.scrollTop;
+  if (scrolled > 800){
+    setIsVisible(true)
+  } 
+  else if (scrolled <= 800){
+    setIsVisible(false)
   }
+};
 
-const handleShowButton =() => {
-  setIsVisible(true);
-}
+const scrollToTop = () =>{
+  window.scrollTo({
+    top: 0, 
+    behavior: 'smooth'
+  });
+};
 
-const handleHideButton = () => {
-  setIsVisible(false)
-}
-
-
+window.addEventListener('scroll', toggleVisible);
 
 const buttonClassNames = isVisible? 'up up_active' : 'up';
   return(
     <>
     <button className={buttonClassNames}
-            onClick={handleUpClick}/>
+            onClick={scrollToTop}/>
     </>
   )
 }
