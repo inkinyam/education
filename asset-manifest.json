@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/education/static/css/main.2d075048.css",
-    "main.js": "/education/static/js/main.c22dc50c.js",
+    "main.js": "/education/static/js/main.c11ea62b.js",
     "static/js/787.635aedaa.chunk.js": "/education/static/js/787.635aedaa.chunk.js",
     "static/media/circe.ttf": "/education/static/media/circe.814e4dd4329ffdb6c9ed.ttf",
     "static/media/circe_bold.ttf": "/education/static/media/circe_bold.63396ee791f60623acbf.ttf",
@@ -22,11 +22,11 @@
     "static/media/play.svg": "/education/static/media/play.c9ccfd12117c48178a99.svg",
     "static/media/up.svg": "/education/static/media/up.6dd2c0d1ee7b6360d07f.svg",
     "main.2d075048.css.map": "/education/static/css/main.2d075048.css.map",
-    "main.c22dc50c.js.map": "/education/static/js/main.c22dc50c.js.map",
+    "main.c11ea62b.js.map": "/education/static/js/main.c11ea62b.js.map",
     "787.635aedaa.chunk.js.map": "/education/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d075048.css",
-    "static/js/main.c22dc50c.js"
+    "static/js/main.c11ea62b.js"
   ]
 }
