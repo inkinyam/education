@@ -50,6 +50,15 @@ body {
 }
 
 
+.video-js{
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  max-height: 97vh;
+  aspect-ratio: 16/9;
+  cursor: url(./images/cursor/Cursor-Hand.svg), pointer !important;
+}
+
 
 
 

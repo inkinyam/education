@@ -1,41 +1,30 @@
 import "./Video.scss"
 import React from 'react';
-import { Player, BigPlayButton } from 'video-react';
 
-import Poster from '../../images/videoPoster.jpg';
-import withCursor from "../../HOCs/withCursor";
 import Title from "../Title/Title";
+import VideoJS from "../VideoJS/VideoJS";
+import Poster from '../../images/videoPoster.jpg';
 
-const Video = ({...props}) => {
-  const { onCursor } = props.context;
+const videoJSOption = {
+  controls: true,
+  poster: Poster,
+  preload: 'metadata',
+  fluid: true,
+  sources: [{
+    src: 'http://kmv.genplanmos.ru/static/video/praktika_6_Mb.mp4',
+    type: 'video/mp4'
+  }]
+}
+
+
+const Video = () => {
   return (
     <section className="video" >
       <Title title ="о программе"/>
-      <div className="video__video" 
-              onMouseEnter = {() => onCursor('play')} 
-              onMouseLeave = {onCursor}>
-        <Player
-          playsInline
-          poster      = {Poster}
-          src         = 'http://kmv.genplanmos.ru/static/video/praktika_6_Mb.mp4'
-          fluid       = {true}
-          muted       = {true}
-          aspectRatio = "auto"
-          autoPlay    = {false} 
-          preload     = "metadata"
-          loop        = {false}
-          >
-
-          
-          <BigPlayButton position={'center'}/>
-        
-        
-        </Player>
-      </div>
+      <VideoJS  options ={videoJSOption}/>
     </section>
-     
   )
 }
 
-export default withCursor(Video);
+export default Video;
 

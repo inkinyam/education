@@ -14,7 +14,11 @@ import Up from '../Up/Up';
 import React from 'react';
 import api from '../../utils/Api';
 
+
+
 const Main = () => {
+
+  
   const [isLoading, setIsLoading] = React.useState(false); //лоадер для страницы
   const [isSucces, setIsSucces] = React.useState(false);  // если все прошло удачно, форму очищаем
   const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false); // для того, чтобы показать сообщение об удачной отправке формы
@@ -53,9 +57,7 @@ const Main = () => {
          <Layout/>
           <main className = 'main'>
             <About />
-            <Video />
-
-
+            <Video/>
             <Vebinar/>
             <Accodion/>
             

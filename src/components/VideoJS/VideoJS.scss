@@ -1,0 +1,92 @@
+// The color of icons, text, and the big play button border.
+$primary-foreground-color: #000; // #fff default
+$primary-background-color: #DAE856;  // #2B333F default
+$center-big-play-button: true; // true default
+$slider-bg-color: lighten($primary-background-color, 33%);
+
+.video-js {
+  font-size: 10px;
+  color: $primary-foreground-color !important;
+  cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
+}
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 4em !important;
+  $big-play-width: 94px; 
+  $big-play-height: 1.5em;
+  line-height: 100px !important;
+  height: 100px !important;
+  width: 100px !important;
+  border: none !important;
+  border-radius: 50% !important;
+
+  left: 50% !important;
+  top: 50% !important;
+  margin-left: -($big-play-width / 2) !important;
+  margin-top: -($big-play-height / 2) !important;   
+  cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
+
+/*   display: none!important;
+  @media screen and (max-width: 1000px) {
+    display: block !important;
+  } */
+
+}
+
+/* .vjs-controls-disabled .vjs-big-play-button, 
+.vjs-has-started .vjs-big-play-button, 
+.vjs-using-native-controls .vjs-big-play-button, 
+.vjs-error .vjs-big-play-button {
+  display: none !important;
+} */
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  background-color: $primary-background-color !important;
+  background-color: rgba($primary-background-color, 0.7);
+}
+
+
+.video-js .vjs-slider {
+  background-color: $slider-bg-color !important;
+  background-color: rgba($slider-bg-color, 0.5);
+}
+
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: $primary-foreground-color !important;
+}
+
+.video-js .vjs-load-progress {
+  background: lighten($slider-bg-color, 25%) !important;
+  background: rgba($slider-bg-color, 0.5) !important;
+}
+
+.video-js .vjs-load-progress div {
+  background: lighten($slider-bg-color, 50%) !important;
+  background: rgba($slider-bg-color, 0.75) !important;
+}
+
+.video-js .vjs-poster {
+  background-size: cover !important;
+  cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
+}
+
+.video-js .vjs-control-bar {
+  display: none !important;
+  @media screen and (max-width: 1000px) {
+    display: flex !important;
+  }
+}
+
+.video-js .vjs-play-control,
+.video-js .vjs-mute-control,
+.video-js .vjs-volume-control,
+.video-js .vjs-progress-control,
+.video-js .vjs-fullscreen-control,  
+.video-js .vjs-picture-in-picture-control{
+  cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
+}
+
