@@ -168,6 +168,7 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
                   className    = {submitButtonClassList}
                   onMouseEnter = {() => {onCursor('big')}}
                   onMouseLeave  = {onCursor}
+                  disabled  = {(!isValid && 'disabled')}
                   >
                          Отправить заявку
           </button>

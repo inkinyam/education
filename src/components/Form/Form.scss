@@ -285,6 +285,10 @@
   flex-direction: row;
   align-items: center;
 
+  @media screen and (max-width: 500px) {
+    position: relative;
+  }
+
 }
 
 .form__svg {
@@ -297,5 +301,10 @@
 
   &_show {
     opacity: 1;
+  }
+
+  @media screen and (max-width: 500px) {
+    position: absolute;
+    right: 5%;
   }
 }
