@@ -9,12 +9,14 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 20px;
   max-width: 644px;
   margin: 0 auto;
   width: 90%;
   padding: 0 16px 0 0;
   box-sizing: border-box;
+
 
   @media screen and (max-width: 800px) {
     width: 80%;
@@ -207,12 +209,13 @@
   border: none;
   background-color: #D3D3DA;
   color: var(--dark-disabled);
-  margin: 0 auto;
+  margin: 0 0 0 16px;
   font-family: 'Circe';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  padding: 0;
   cursor: none;
  
 

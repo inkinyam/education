@@ -78,6 +78,12 @@
   transition: all 0.2s ease-in-out;
   &:hover {
     cursor:  url(../../images/cursor/Cursor-Hand.svg), pointer;
+   
+  }
+
+  &:active {
+    cursor:  url(../../images/cursor/Cursor-Hand.svg), pointer;
+    background-color: var(--primary-hovered);
   }
 
   @media screen and (max-width: 1180px) {
