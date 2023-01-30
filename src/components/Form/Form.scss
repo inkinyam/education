@@ -234,7 +234,7 @@
 
   
   @media screen and (max-width: 500px) {
-    width: 90%;
+    width: 100%;
   }
 
 }
@@ -297,6 +297,8 @@
 .form__svg {
   opacity: 0;
   transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 5%;
 
   path{
     fill: #2D8BF1;
@@ -306,8 +308,8 @@
     opacity: 1;
   }
 
-  @media screen and (max-width: 500px) {
+/*   @media screen and (max-width: 500px) {
     position: absolute;
     right: 5%;
-  }
+  } */
 }
