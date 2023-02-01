@@ -1,12 +1,15 @@
 import './Lectionard.scss';
 import withCursor from "../../HOCs/withCursor";
 
-const Lectionard = ({data, ...props}) => {
+const Lectionard = ({data, color, ...props}) => {
   const { onCursor } = props.context;
 
+  const lectioncardClassList = (color === 'blue')? 'lectioncard lectioncard_v_blue': 'lectioncard lectioncard_v_yellow'
+  const topicClassList = data.topic? 'lectioncard__topic' : 'lectioncard__topic lectioncard__topic_hide';
+
   return (
-    <li className='lectioncard' onMouseEnter={onCursor}>
-      <div className='lectioncard__topic'>
+    <li className={lectioncardClassList} onMouseEnter={onCursor}>
+      <div className={topicClassList}>
         <small className='lectioncard__tag'>Тема</small>
         <h4 className='lectioncard__title'>{data.topic}</h4>
       </div>  

@@ -9,6 +9,22 @@
   }
 }
 
+.video__text {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  max-width: 628px;
+  width: 90%;
+  margin: 0 auto 80px;
+    @media screen  and (max-width: 766px) {
+      font-size: 15px;
+      line-height: 24px;
+      margin: 0 auto 40px;
+    }
+ }
+
 .video__video {
   width: 100%;
   height: fit-content;

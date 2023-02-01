@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import withCursor from "../../HOCs/withCursor";
 import Lectionard from '../Lectionard/Lectionard';
 
-const AccodionCard = ({data, ...props}) => {
+const AccodionCard = ({data, color, ...props}) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const { onCursor } = props.context;
 
@@ -13,6 +13,16 @@ const AccodionCard = ({data, ...props}) => {
     threshold: 0.5,
     triggerOnce: true
   });
+
+  const setCursor = () => {
+    if (color === 'yellow') {
+      onCursor('more')
+    }
+
+    if (color === 'blue') {
+      onCursor('bmore')
+    }
+  }
 
   const accordioncardClassList = inView? 'accordion__card animated' : 'accordion__card '
 
@@ -65,11 +75,14 @@ const AccodionCard = ({data, ...props}) => {
   <motion.div ref={ref} className = {accordioncardClassList}
               animate   = {isOpen ? "open" : "closed"}
               onClick = {() => {setIsOpen(!isOpen) }}
-              onMouseEnter = {() => {onCursor('more')}}
+              onMouseEnter = {()=>{setCursor()}}
               onMouseLeave = {onCursor}>
 
     <div className='accordion__cardtitle' >
-      <h4 className='accordion__title '>{data.chapter}</h4>
+      <h4 className='accordion__title'>{data.chapterInfo}
+        <p className=''>{data.chapter}</p>
+      </h4>
+      
       <motion.div className ='accordion__icon' 
                   variants  = {iconVariants}>
         <svg viewBox="0 0 24 24">
@@ -85,7 +98,9 @@ const AccodionCard = ({data, ...props}) => {
           {
             data.lecture.map((item, inx) => {
               return(
-                <Lectionard key={inx} data={item}/>
+                <Lectionard key   = {inx} 
+                            data  = {item}
+                            color = {color}/>
               )
             })
           }

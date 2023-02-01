@@ -1,10 +1,10 @@
-.vebinar {
+.persons {
   width: 100%;
-  padding: 80px 0;
+  padding: 120px 0;
   position: relative;
 }
 
-.vebinar__subtitle {
+.persons__subtitle {
   font-family: 'Circe';
   font-style: normal;
   font-weight: 700;
@@ -19,7 +19,7 @@
   }
 }
 
-.vebinar__layout {
+.persons__layout {
   z-index: 1;
   position: absolute;
   overflow: hidden;
@@ -27,13 +27,19 @@
   left: 0;
   width: 100%;
   height: 60%;
-  clip-path: polygon(0 0, 100% 0, 100% 47%, 96% 77%, 87% 79%, 79% 90%, 28% 91%, 23% 84%, 11% 89%, 0 58%);
+  clip-path: polygon(0% 0%, 6% 0, 12% 8%, 18% 0, 100% 0%, 100% 37%, 94% 49%, 100% 84%, 74% 100%, 27% 88%, 0 100%);
+
+
   @media screen and (max-width: 1100px) {
-    height: 40%;
+    height: 30%;
+
+    clip-path: polygon(0% 0%, 14% 0, 27% 6%, 43% 0, 100% 0%, 100% 37%, 100% 100%, 78% 93%, 10% 100%, 0 71%);
+
+
   }
 }
 
-.vebinar__bg {
+.persons__bg {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -45,21 +51,25 @@
   animation: bganimation 60s linear infinite forwards;
 }
 
-.vebinar__content {
+.persons__content {
   width: 90%;
   margin: 0 auto;
   position: relative;
   z-index: 3;
 }
 
-.vebinar__list {
+.persons__list {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   row-gap: 80px;
   column-gap: 24px;
+
+  @media screen and (max-width: 1190px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @media screen and (max-width: 780px) {
     row-gap: 40px;
@@ -67,7 +77,7 @@
   }
 }
 
-.vebinar__item {
+.persons__item {
   position: relative; 
   box-sizing: border-box;
   padding: 16px 24px 0 0;
@@ -104,13 +114,12 @@
   }
 }
 
-.vebinar__topic {
-  font-family: 'Circe';
+.persons__topic {
+  font-family: 'Lora';
   font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
-  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
   margin: 0 0 46px;
 
   @media screen and (max-width: 1023px) {
@@ -119,12 +128,12 @@
 
 
   @media screen and (max-width: 766px) {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 15px;
+    line-height: 24px;
   }
 }
 
-.vebinar__cardtext {
+.persons__cardtext {
   font-family: 'Circe';
   font-style: normal;
   font-weight: 700;
@@ -135,23 +144,40 @@
   text-align: end;
   margin: 0;
 
-  &:nth-of-type(2) {
-    margin-top: 8px;
-  }
   @media screen and (max-width: 766px) {
     font-size: 18px;
     line-height: 26px;
-    align-self: flex-start;
-    text-align: start;
   }
 }
 
-.vebinar__img {
-    width: 98px;
-    height: 98px;
+.persons__job {
+  font-family: 'Circe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  align-self: flex-end;
+  text-align: end;
+  margin: 0;
+  min-height: 48px;
+
+  @media screen and (max-width: 766px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.persons__img {
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
     margin-bottom: 24px;
     margin-top: auto;
+    @media screen and (max-width: 766px) {
+      width: 180px;
+      height: 180px;
+    }
+
 }

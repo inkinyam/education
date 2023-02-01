@@ -50,11 +50,17 @@
   font-size: 22px;
   line-height: 30px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-transform: uppercase;
   color: var(--dark-default);
   margin: 30px 0 24px;
   max-width: 60%;
+
+  p {
+    margin: 0;
+    
+  };
   @media screen and (max-width: 1100px) {
     max-width: 80%;
   }

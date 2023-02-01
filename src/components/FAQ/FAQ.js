@@ -10,7 +10,7 @@ const FAQ = () => {
  
   return (
     <section className='faq'>
-      <Title title='F.A.Q. Частые вопросы'></Title>
+      <Title title='Частые вопросы'></Title>
         <div className='faq__cards'>
           {
             faqInfo.map(item => {

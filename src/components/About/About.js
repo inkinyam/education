@@ -7,7 +7,7 @@ const About = () => {
   
   return (
     <section className='about'>
-      <Title title='Как проходит'> </Title>
+      <Title title='О программе'> </Title>
       <CardList cardData ={AboutCardData}
                 cardComponent={<Card/>}/>
 
