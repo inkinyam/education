@@ -89,7 +89,7 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="about" 
                   onClick={handleBurgerClick}    
                   smooth={true} 
-                  className='mobileNavigation__link'>Как проходит</Link>  
+                  className='mobileNavigation__link'>О программе</Link>  
           </motion.li>
 
           <motion.li className="mobileNavigation__item"
@@ -97,15 +97,7 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="video" 
                   onClick={handleBurgerClick}  
                   smooth={true}  
-                  className='mobileNavigation__link'>О программе</Link>   
-          </motion.li>
-
-          <motion.li className="mobileNavigation__item"
-                    variants={menuItemVariants}> 
-            <Link to="vebinar" 
-                  onClick={handleBurgerClick}
-                  smooth={true} 
-                  className='mobileNavigation__link'>Вебинары</Link>   
+                  className='mobileNavigation__link'>Как это будет</Link>   
           </motion.li>
 
           <motion.li className="mobileNavigation__item"
@@ -113,7 +105,23 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="accordion" 
                   onClick={handleBurgerClick}
                   smooth={true} 
-                  className='mobileNavigation__link'>Лекции в записи</Link>  
+                  className='mobileNavigation__link'>Содержание курса</Link>   
+          </motion.li>
+
+          <motion.li className="mobileNavigation__item"
+                    variants={menuItemVariants}> 
+            <Link to="persons" 
+                  onClick={handleBurgerClick}
+                  smooth={true} 
+                  className='mobileNavigation__link'>Наши лекторы</Link>  
+          </motion.li>
+
+          <motion.li className="mobileNavigation__item"
+                    variants={menuItemVariants}> 
+            <Link to="faq" 
+                  onClick={handleBurgerClick}
+                  smooth={true} 
+                  className='mobileNavigation__link'>Частые вопросы</Link>  
           </motion.li>
 
           <motion.li className="mobileNavigation__item"

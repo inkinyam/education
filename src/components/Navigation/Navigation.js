@@ -24,10 +24,11 @@ const handleBurgerClick =() => {
              <img src={logo} alt="логотип"/>
         </a>
         <nav className="navigation__list">
-        <Link to="about"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Как проходит</Link> 
-        <Link to="video"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >О программе</Link> 
-        <Link to="vebinar"   smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Вебинары</Link> 
-        <Link to="accordion" smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Лекции в записи</Link> 
+        <Link to="about"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >О программе</Link> 
+        <Link to="video"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Как это будет</Link> 
+        <Link to="accordion" smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Содержание курса</Link> 
+        <Link to="persons"   smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Наши лекторы</Link> 
+        <Link to="faq"       smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Частые вопросы</Link> 
         <Link to="form"      smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Подать заявку</Link> 
       </nav>
 

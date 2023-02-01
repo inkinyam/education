@@ -3,6 +3,7 @@ import React from 'react';
 import { useInputValidator } from '../../HOCs/useInputValidator';
 import { useInView } from "react-intersection-observer";
 import withCursor from "../../HOCs/withCursor";
+import Title from '../Title/Title';
 
 
 const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) => {
@@ -11,7 +12,7 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
   const inputControl          = useInputValidator();
   const [isValid, setIsValid] = React.useState(false);
 
-  const { surname, name, patronymic, email, phone, organization } = inputControl.errors;
+  const { surname, name, patronymic, email, phone, organization, consent } = inputControl.errors;
 
 
 
@@ -29,14 +30,15 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
 
   const handleSubmitForm = (e) => {
     e.preventDefault();
-    let {surname, name, patronymic, email, phone, organization} = inputControl.values;
+    let {surname, name, patronymic, email, phone, organization, consent} = inputControl.values;
     onSubmit({  
         surname: surname,
         name: name,
         patronymic: patronymic,
         email: email,
         phone: phone,
-        organization: organization
+        organization: organization,
+        consent: consent
        }) 
   }
 
@@ -52,8 +54,9 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
  
   return ( 
       <section className='form' >
+        <Title title={'Подать заявку'}></Title>
         <form  className={formClassList} noValidate onSubmit = {handleSubmitForm}  ref={ref}>
-          <h4 className='form__title'>Подать заявку на программу повышения квалификации</h4>
+          <h4 className='form__title'> Заявка на программу повышения квалификации</h4>
 
           <fieldset className='form__fieldset'>
             <span className='form__text'>Фамилия</span>
@@ -160,7 +163,39 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
               <span className={`form__err ${inputControl?.errors?.organization && "form__err_show"}`}>{organization}</span>
             </label>
           </fieldset>
-          
+
+          <fieldset className='form__fieldset'>
+          <input className={`form__checkbox ${inputControl?.errors?.consent && "form__checkbox_error"}`}
+                     type        = "checkbox"
+                     required 
+                     value       = {inputControl?.values?.consent || ''}
+                     onChange    = {inputControl.handleChange}
+                     name        = "consent"
+                     id          = "consent"/>
+
+            <label htmlFor='consent' className='form__checkboxlabel'>
+              <p>Нажимая на кнопку, вы даете согласние на обработку своих персональных данных в соответствии с 
+              <a href='https://genplanmos.ru/policypersonaldata/' 
+                 rel='noreferrer' 
+                 target='_blank'
+                 onMouseEnter = {() => {onCursor('big')}}
+                 onMouseLeave  = {onCursor}>
+                  Политикой ГАУ "Институт Генплана Москвы"</a>
+
+               и принимаете 
+               <a href='https://genplanmos.ru/useragreement/' 
+                  rel='noreferrer' 
+                  target='_blank'
+                  onMouseEnter = {() => {onCursor('big')}}
+                  onMouseLeave  = {onCursor}>
+                    Пользовательское соглашение 
+                </a>.</p>
+              
+               
+              
+              <span className={`form__err ${inputControl?.errors?.consent && "form__err_show"}`}>Для регистрации необходимо дать согласие на обработку персональных данных и принять пользовательское соглашение</span>
+            </label>
+          </fieldset>
       
           <div className='form__buttonbox'>
 
