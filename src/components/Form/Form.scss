@@ -253,6 +253,7 @@
   
   @media screen and (max-width: 500px) {
     width: 100%;
+    margin: 0;
   }
 
 }
@@ -306,8 +307,10 @@
   flex-direction: row;
   align-items: center;
 
+
   @media screen and (max-width: 500px) {
     position: relative;
+    width: 100%;
   }
 
 }
@@ -470,6 +473,11 @@
 
 .form__checkboxlabel .form__err {
   margin-top: 4px;
+  height: 40px;
+
+  @media screen and (max-width: 500px) {
+    height: auto;
+  }
 }
 
 .form .title {
