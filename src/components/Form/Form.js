@@ -55,6 +55,7 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
   return ( 
       <section className='form' >
         <Title title={'Подать заявку'}></Title>
+        <h2 className='form__mobiletitle'>Подать заявку на программу повышения квалификации</h2>
         <form  className={formClassList} noValidate onSubmit = {handleSubmitForm}  ref={ref}>
           <h4 className='form__title'> Заявка на программу повышения квалификации</h4>
 

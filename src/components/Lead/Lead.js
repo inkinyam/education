@@ -13,7 +13,8 @@ const leadClassList  = isLeadHide? 'lead_hide': 'lead';
       <div className='lead__content'>
         
           <div className='lead__title'>
-            <h1>Программа повышения <br/> квалификации<br/> «Градостроительная база»</h1> 
+            <small className='lead__title-info'>Дополнительная профессиональная программа повышения квалификации</small>
+            <h1> «Актуальные аспекты градостроительной деятельности»</h1> 
             <Link smooth={true}  
                       to="form" 
                       className='lead__button'  
@@ -27,6 +28,7 @@ const leadClassList  = isLeadHide? 'lead_hide': 'lead';
 
 
         <div className='lead__infoblock'>
+          <small className='lead__title-info'>Дополнительная профессиональная программа повышения квалификации</small>
           <p className='lead__info'>обучающий курс разработан и проводится Институтом Генплана Москвы совместно с НИУ МГСУ</p>
         </div>
 

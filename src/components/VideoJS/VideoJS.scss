@@ -14,7 +14,7 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   font-size: 4em !important;
   $big-play-width: 94px; 
   $big-play-height: 100px;
-  line-height: 100px !important;
+  line-height: 90px !important;
   height: 100px !important;
   width: 100px !important;
   border: none !important;
@@ -27,11 +27,18 @@ $slider-bg-color: lighten($primary-background-color, 33%);
 
   cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
 
+  
+ 
 /*   display: none!important;
   @media screen and (max-width: 1000px) {
     display: block !important;
   } */
 
+}
+
+.vjs-icon-play:before, 
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  content: url(../../images/cursor/play.svg) !important;
 }
 
 /* .vjs-controls-disabled .vjs-big-play-button, 

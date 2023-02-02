@@ -6,6 +6,7 @@ const AnimatedText = ({text}) => {
 
   const { ref, inView } = useInView({
     threshold: 0.9,
+    triggerOnce: true
   });
 
   const textClassNames = inView? 'AnimatedText__text animated': 'AnimatedText__text';
