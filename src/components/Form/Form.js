@@ -139,6 +139,7 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
                      type        = "tel"
                      minLength   = "2" 
                      maxLength   = "100" 
+                     pattern     = '^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'
                      required 
                      value       = {inputControl?.values?.phone || ''}
                      onChange    = {inputControl.handleChange}
