@@ -12,10 +12,10 @@ const PersonsCard = ({props}) => {
 
   return (
     <li ref={ref} className={cardClassList}>
-      <h4 className="persons__topic">{props.topic}</h4>
-      <img className="persons__img" src={props.lecturerPhoto} alt={props.lecturer}/>
       <p className="persons__cardtext">{props.lecturer}</p>
       <p className="persons__job">{props.job}</p>
+      <img className="persons__img" src={props.lecturerPhoto} alt={props.lecturer}/>
+      <h4 className="persons__topic">{props.topic}</h4>
     </li>
   )
 }

@@ -52,7 +52,6 @@ const Main = () => {
 
   return (     
     <>
-        <Loader isLoading = {isLoading}/>
         <div className = {isLoading ? 'hide_content': ''}>
          <Layout/>
           <main className = 'main'>

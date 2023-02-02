@@ -1,5 +1,6 @@
 .cursor {
   width: 24px;
+  opacity: 1;
   height: 24px;
   mix-blend-mode: difference;
   background-color: #fff;
@@ -15,7 +16,10 @@
   @media screen and (max-width: 1000px) {
     display: none;
   }
-  
+}
+
+.cursor-hide {
+  opacity: 0;
 }
 
 .cursor-big {

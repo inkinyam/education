@@ -26,15 +26,14 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   top: 50% !important;
   margin-left: -($big-play-width / 2) !important;
   margin-top: -($big-play-height / 2) !important;   
+  display: none!important;
 
   cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
 
   
- 
-/*   display: none!important;
   @media screen and (max-width: 1000px) {
     display: block !important;
-  } */
+  } 
 
 }
 

@@ -16,7 +16,6 @@
 }
 
 #mySvg {
-
   stroke-width: 2px;
   stroke: rgb(255, 255, 255);
   transition: all 0.01s ease-out;
@@ -24,10 +23,14 @@
 
 .wayLine {
   #wire {
-    opacity: 0.2;
+    opacity: 0;
     stroke: #fff;
     stroke-width: 2;
     fill: none;
+  }
+
+  #circle {
+    opacity: 0;
   }
 
 /*   #circle {
@@ -41,6 +44,23 @@
     }
   } */
 }
+
+
+#line {
+  opacity: 0;
+  animation: lineOpacity 1s ease-in-out 4s forwards;
+}
+
+@keyframes lineOpacity {
+  from {
+    opacity: 0;
+  }  
+
+  to {
+    opacity: 1;
+  }
+}
+
 
 @keyframes circleway {
   from {
