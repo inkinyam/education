@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/education/static/css/main.1a88da5a.css",
+    "main.css": "/education/static/css/main.e5460e01.css",
     "main.js": "/education/static/js/main.96e477a9.js",
     "static/js/787.5cb58ab4.chunk.js": "/education/static/js/787.5cb58ab4.chunk.js",
     "static/media/videoPoster.jpg": "/education/static/media/videoPoster.90b3d7214858f32d8e65.jpg",
@@ -23,12 +23,12 @@
     "static/media/pensil.svg": "/education/static/media/pensil.438300fd812224af9857.svg",
     "static/media/play.svg": "/education/static/media/play.c9ccfd12117c48178a99.svg",
     "static/media/up.svg": "/education/static/media/up.6dd2c0d1ee7b6360d07f.svg",
-    "main.1a88da5a.css.map": "/education/static/css/main.1a88da5a.css.map",
+    "main.e5460e01.css.map": "/education/static/css/main.e5460e01.css.map",
     "main.96e477a9.js.map": "/education/static/js/main.96e477a9.js.map",
     "787.5cb58ab4.chunk.js.map": "/education/static/js/787.5cb58ab4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a88da5a.css",
+    "static/css/main.e5460e01.css",
     "static/js/main.96e477a9.js"
   ]
 }
