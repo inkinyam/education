@@ -32,16 +32,25 @@ const Footer = props => {
       <div className='footer__box'>
         <h4 className='footer__title'>По вопросам: e.gnezdilova@genplanmos.ru</h4>
         <div className='footer__links'>
-          <Link className='footer__link' 
-              to='#'
+          <a className='footer__link' 
+              href='https://t.me/genplan_institute'
+              target="_blank"
+              rel="noreferrer"
               onMouseEnter = {() => {onCursor('big')}}
               onMouseLeave = {onCursor}>
-                Telegram</Link>
-          <Link className='footer__link' 
-              to='#'
+                Telegram</a>
+          <a className='footer__link' 
+              href='https://vk.com/genplanmos/'
+              target="_blank"
+              rel="noreferrer"
               onMouseEnter = {() => {onCursor('big')}}
               onMouseLeave = {onCursor}>
-                Vkontakte</Link>  
+                Vkontakte</a>  
+          <a  className='footer__link' 
+              href='https://genplanmos.ru/'
+              onMouseEnter = {() => {onCursor('big')}}
+              onMouseLeave = {onCursor}>
+                Сайт Инстиута</a>  
         </div>
       </div>
     </div>

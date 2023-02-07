@@ -43,56 +43,56 @@ const AboutCardData = [
 
 const PersonsInfo = [
   { id: 1,
-    topic: 'Тема: Подходы к разработке документов территориального планирования',
+    topic: 'Подходы к разработке документов территориального планирования',
     lecturer: 'Колонтай А.Н.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D1%82%D0%B0%D0%B9.png&fileId=4072651&x=1920&y=1200&a=true',
-    job: 'Cоветник директора Института Генплана Москвы'
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D1%82%D0%B0%D0%B9.png&fileId=4116067&x=1920&y=1200&a=true',
+    job: 'Заместитель директора Института Генплана'
   },
 
   { id: 2,
-    topic: 'Тема: Современные вызовы устойчивому развитию городов. Тенденции развития. Мировой и отечественный опыт',
+    topic: 'Современные вызовы устойчивому развитию городов. Тенденции развития. Мировой и отечественный опыт',
     lecturer: 'Данилина Н.В.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D0%BD%D0%B0.png&fileId=4072652&x=1920&y=1200&a=true',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D0%BD%D0%B0.png&fileId=4116068&x=1920&y=1200&a=true',
     job: 'д.т.н., член-корр. РААСН, Зав. Кафедры, «Градостроительство» НИУ МГСУ'
   },
 
   { id: 3,
-    topic: 'Тема: Анализ и планирование исторических территорий',
+    topic: 'Анализ и планирование исторических территорий',
     lecturer: 'Верховский Д.А.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.png&fileId=4072667&x=1920&y=1200&a=true',
-    job: 'Главный архитектор Института Генплана Москвы'
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.png&fileId=4116069&x=1920&y=1200&a=true',
+    job: 'Начальник мастерской "Планирования и анализа исторических территорий" (МПиАИТ)'
   },
 
   { id: 4,
-    topic: 'Тема: Прикладные методы градостроительных исследований / Аналитические инструменты решения задач территориального управления',
+    topic: 'Прикладные методы градостроительных исследований / Аналитические инструменты решения задач территориального управления',
     lecturer: 'Мустафин Г.М.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9C%D1%83%D1%81%D1%82%D0%B0%D1%84%D0%B8%D0%BD.png&fileId=4072668&x=1920&y=1200&a=true',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9C%D1%83%D1%81%D1%82%D0%B0%D1%84%D0%B8%D0%BD.png&fileId=4116070&x=1920&y=1200&a=true',
     job: 'Советник директора Института Генплана Москвы'
   },
 
   { id: 5,
-    topic: 'Тема: Развитие транспортных систем города',
+    topic: 'Развитие транспортных систем города',
     lecturer: 'Крестмейн М.Г.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%BC%D0%B5%D0%B9%D0%BD.png&fileId=4072669&x=1920&y=1200&a=true',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%BC%D0%B5%D0%B9%D0%BD.png&fileId=4116071&x=1920&y=1200&a=true',
     job: 'Главный инженер Института Генплана Москвы'
   },
 
   { id: 6,
-    topic: 'Тема: Определение перспективной экономической специализации территорий города исходя из анализа кластеризации существующих экономических комплексов',
+    topic: 'Определение перспективной экономической специализации территорий города исходя из анализа кластеризации существующих экономических комплексов',
     lecturer: 'Гук Т.Н.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%93%D1%83%D0%BA.png&fileId=4072670&x=1920&y=1200&a=true',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%93%D1%83%D0%BA.png&fileId=4116072&x=1920&y=1200&a=true',
     job: 'Директор Института Генплана Москвы'
   },
 
   { id: 7,
-    topic: 'Тема: Управление проектами территориального развития и взаимодействие с жителями',
+    topic: 'Управление проектами территориального развития и взаимодействие с жителями',
     lecturer: 'Пенкин А.С.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/9NixL6M8RTeBtHK?x=1908&y=739&a=true&file=%25D0%259F%25D0%25B5%25D0%25BD%25D0%25BA%25D0%25B8%25D0%25BD.png&scalingup=0',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9F%D0%B5%D0%BD%D0%BA%D0%B8%D0%BD.png&fileId=4116073&x=1920&y=1200&a=true',
     job: 'Начальник управления маркетинга Института Генплана Москвы'
   },
 
   { id: 8,
-    topic: 'Тема: Новеллы и актуальное правоприменение градостроительного законодательства',
+    topic: 'Новеллы и актуальное правоприменение градостроительного законодательства',
     lecturer: 'Валяев О.В.',
     lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0.png&fileId=4074909&x=1920&y=1200&a=true',
     job: 'Начальник управления правовой базы градостроительства'
