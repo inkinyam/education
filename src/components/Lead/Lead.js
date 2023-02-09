@@ -15,7 +15,7 @@ const leadClassList  = isLeadHide? 'lead_hide': 'lead';
         
           <div className='lead__title'>
             <small className='lead__title-info'>Дополнительная профессиональная программа повышения квалификации</small>
-            <h1 > «Актуальные аспекты градостроительной деятельности»</h1> 
+            <h1> «Актуальные аспекты градостроительной деятельности»</h1> 
             <div className='lead__buttonbox' ref = {lineref}>
               <Link smooth={true}  
                         to="form" 
