@@ -23,10 +23,10 @@ const CursorProvider = ({children}) => {
   
   React.useEffect (() => {
     document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseleave', onHideCursor)
+/*     document.addEventListener('mouseleave', onHideCursor) */
     return () => {
       document.removeEventListener('mousemove', onMouseMove);
-      document.addEventListener('mouseleave', onHideCursor)
+/*       document.addEventListener('mouseleave', onHideCursor) */
     }
   }, [])
 

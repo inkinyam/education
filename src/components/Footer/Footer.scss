@@ -71,6 +71,7 @@
   transition: color 0.2s ease-in-out;
   &:hover {
     color: var(--accent-hovered);
+    cursor: url(../../images/cursor/Cursor-Hand.svg), pointer;
   }
   &:active {
     color: var(--accent-onclick);
