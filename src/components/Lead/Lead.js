@@ -2,7 +2,6 @@ import './Lead.scss';
 import React from 'react';
 import { Link } from 'react-scroll';
 import withCursor from "../../HOCs/withCursor";
-import ActiveLine from '../ActiveLine/ActiveLine';
 
 const Lead = ({isLeadHide, ...props}) => {
   const { onCursor } = props.context;
@@ -12,7 +11,6 @@ const leadClassList  = isLeadHide? 'lead_hide': 'lead';
 
   return (
     <section className={leadClassList} >
-    <ActiveLine coords={lineref}/>
       <div className='lead__content'>
         
           <div className='lead__title'>

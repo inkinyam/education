@@ -79,8 +79,10 @@ const AccodionCard = ({data, color, ...props}) => {
               onMouseLeave = {onCursor}>
 
     <div className='accordion__cardtitle' >
-      <h4 className='accordion__title'>{data.chapterInfo}
+      <h4 className='accordion__title'>
+        
         <p className=''>{data.chapter}</p>
+        {data.chapterInfo}
       </h4>
       
       <motion.div className ='accordion__icon' 
