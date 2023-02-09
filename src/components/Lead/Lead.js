@@ -2,26 +2,33 @@ import './Lead.scss';
 import React from 'react';
 import { Link } from 'react-scroll';
 import withCursor from "../../HOCs/withCursor";
+import ActiveLine from '../ActiveLine/ActiveLine';
 
 const Lead = ({isLeadHide, ...props}) => {
   const { onCursor } = props.context;
+  const lineref = React.useRef(null);
 
 const leadClassList  = isLeadHide? 'lead_hide': 'lead';
 
   return (
     <section className={leadClassList} >
+    <ActiveLine coords={lineref}/>
       <div className='lead__content'>
         
           <div className='lead__title'>
             <small className='lead__title-info'>Дополнительная профессиональная программа повышения квалификации</small>
-            <h1> «Актуальные аспекты градостроительной деятельности»</h1> 
-            <Link smooth={true}  
-                      to="form" 
-                      className='lead__button'  
-                      onMouseEnter = {() => onCursor('big')} 
-                      onMouseLeave = {onCursor}> 
-                        Заполнить заявку
-            </Link>
+            <h1 > «Актуальные аспекты градостроительной деятельности»</h1> 
+            <div className='lead__buttonbox' ref = {lineref}>
+              <Link smooth={true}  
+                        to="form" 
+                        
+                        className='lead__button'  
+                        onMouseEnter = {() => onCursor('big')} 
+                        onMouseLeave = {onCursor}> 
+                          Заполнить заявку
+              </Link>
+            </div>
+           
           </div>
       
         <div className="lead__startpoint"></div>

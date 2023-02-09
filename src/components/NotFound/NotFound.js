@@ -9,14 +9,23 @@ const NotFound = ({...props}) => {
 
   return (
     <section className='notfound'>
-      <h3 className='notfound__title'>404</h3>
-      <Link to={-1}
-            className='notfound__button'
-            onMouseEnter = {() => {onCursor('big')}}
-            onMouseLeave = {onCursor}>
-              Назад
-      </Link>
-    </section>
+    <div className='layout__bg'>
+      <div className='layout__big'></div>
+      <div className='layout__middle r1'></div>
+      <div className='layout__middle r2'></div>
+      <div className='layout__middle r3'></div>
+      <div className='layout__middle r4'></div>
+      <div className='layout__small'></div>
+    </div>
+
+    <h3 className='notfound__title'>404</h3>
+    <Link to={-1}
+          className='notfound__button'
+          onMouseEnter = {() => {onCursor('big')}}
+          onMouseLeave = {onCursor}>
+            Назад
+    </Link>
+  </section>
   )
 }
 

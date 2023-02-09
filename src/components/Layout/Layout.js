@@ -4,8 +4,6 @@ import React from 'react';
 import Lead from '../Lead/Lead';
 import Navigation from '../Navigation/Navigation';
 import MobileNavigation from '../MobileNavigation/MobileNavigation';
-import ActiveLine from '../ActiveLine/ActiveLine';
-
 
 const Layout = () => {
   const [isLeadHide, setIsLeadHide] = React.useState(false);
@@ -22,7 +20,6 @@ const Layout = () => {
         <span className='layout__horisontal'>
           <span className='layout__point'></span>
         </span>
-        <ActiveLine/>
         <span className='layout__vertical'>
           <span className='layout__point'></span>
         </span>

@@ -7,14 +7,14 @@
   height: 40px;
   border: none;
   border-radius: 50%;
-  background-color: #f6f6f6;
+  background-color: hsl(0, 0%, 96%);
   background-image: url(../../images/up.svg);
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 2px 4px rgb(33 31 51 / 25%);
   display: none;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &_active {
     display: block;
@@ -23,12 +23,12 @@
   
   
   &:hover {
+    background-color: hsl(0, 0%, 92%);
     cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
   }
 
   &:active {
-    background-color: rgb(226, 225, 225);
-    transform: scale(0.8);
+    background-color: hsl(0, 0%, 90%);
   }
 
 }
