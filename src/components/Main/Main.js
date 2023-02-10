@@ -20,10 +20,11 @@ const Main = () => {
 
   
   const [isLoading, setIsLoading] = React.useState(false); //лоадер для страницы
-  const [isSucces, setIsSucces] = React.useState(false);  // если все прошло удачно, форму очищаем
-  const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false); // для того, чтобы показать сообщение об удачной отправке формы
-  const [isErrorFormPost, setIsErrorFormPost] = React.useState(false); //для того, чтобы показать ошибку при отправке формы
-  const [isFormPosting, setIsFormPosting] = React.useState(false); //для лоадера загрузки чтобы показать что форма отправляется
+
+  const [isSucces, setIsSucces]                 = React.useState(false);  // если все прошло удачно, форму очищаем
+  const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false);  // для того, чтобы показать сообщение об удачной отправке формы
+  const [isErrorFormPost, setIsErrorFormPost]   = React.useState(false);  // для того, чтобы показать ошибку при отправке формы
+  const [isFormPosting, setIsFormPosting]       = React.useState(false);  // для лоадера загрузки чтобы показать что форма отправляется
 
   const handleSubmitForm = ({surname, name, patronymic, email, phone, organization }) => {
     setIsFormPosting(true);

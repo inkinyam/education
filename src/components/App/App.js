@@ -1,6 +1,6 @@
 import './App.scss';
 import React from 'react';
-import { Route, Routes} from 'react-router-dom';
+import { Route, Routes, Navigate} from 'react-router-dom';
 import Main from '../Main/Main';
 import NotFound from '../NotFound/NotFound'
 
@@ -17,10 +17,11 @@ function App() {
       <div className="App">
 
       <Routes>
-        <Route path = "*" element={<NotFound />} />
-        <Route path = "/" element={<Main />} /> 
+          <Route path = "/"    element={ <Main />} /> 
+          <Route path = "/404" status={404} element={ <NotFound /> } />
+          <Route path = "*"    element={ <Navigate to="/404" replace />} />
       </Routes>
-      </div>
+    </div>
 
     </CursorProvider>
   );

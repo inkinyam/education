@@ -43,23 +43,34 @@
     font-weight: 700;
     font-size: 78px;
     line-height: 102%;
+    white-space: normal;
     margin: 0;
     color: var(--light-default);
     text-transform: uppercase;
-    display: flex;
+
+    
+
 
     @media screen and (max-width: 1180px) {
-      font-size: 70px;
-      word-break: break-word;
+      font-size: 65px;
+     }
+
+     @media screen and (max-width: 900px) {
+      font-size: 48px;
     }
 
     @media screen and (max-width: 766px) {
       font-size: 36px;
     }
 
-    @media screen and (max-width: 376px) {
+    @media screen and (max-width: 500px) {
+      hyphens: auto;
+      word-wrap: break-word;
+     }
+
+/*     @media screen and (max-width: 388px) {
       font-size: 32px;
-    }
+    } */
   }
 }
 
@@ -71,7 +82,13 @@
   line-height: 26px;
   color: var(--light-default);
   text-transform: uppercase;
+  max-width: 95%;
   margin-bottom: 16px;
+}
+
+.lead__buttonbox {
+  display: flex;
+  width: fit-content;
 }
 
 
@@ -93,13 +110,14 @@
   margin-top: 24px;
   transition: all 0.2s ease-in-out;
   &:hover {
+    background-color: var(--primary-hovered);
     cursor:  url(../../images/cursor/Cursor-Hand.svg), pointer;
    
   }
 
   &:active {
     cursor:  url(../../images/cursor/Cursor-Hand.svg), pointer;
-    background-color: var(--primary-hovered);
+    background-color: var(--primary-onclick);
   }
 
   @media screen and (max-width: 1180px) {

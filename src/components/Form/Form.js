@@ -6,15 +6,14 @@ import withCursor from "../../HOCs/withCursor";
 import Title from '../Title/Title';
 
 
-const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) => {
+const Form = ({onSubmit, isPosted, isError, isSucces, isLoading,  ...props}) => {
+
   const { onCursor } = props.context;
-
-  const inputControl          = useInputValidator();
-  const [isValid, setIsValid] = React.useState(false);
-
-  const { surname, name, patronymic, email, phone, organization, consent } = inputControl.errors;
-
-
+  const inputControl = useInputValidator();
+  const [isValid, setIsValid]             = React.useState(false);
+  const [message, setMessage]             = React.useState('');
+  const [messageStatus, setMessageStatus] = React.useState('');
+  const { surname, name, patronymic, email, phone, organization } = inputControl.errors;
 
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -27,11 +26,12 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
     setIsValid(inputControl.isValid)
   }, [ inputControl.isValid]);
 
-
+/*сабмит формы*/
   const handleSubmitForm = (e) => {
     e.preventDefault();
     let {surname, name, patronymic, email, phone, organization, consent} = inputControl.values;
-    onSubmit({  
+    if (isValid) {
+      onSubmit({  
         surname: surname,
         name: name,
         patronymic: patronymic,
@@ -40,18 +40,36 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
         organization: organization,
         consent: consent
        }) 
+    } else {
+      setMessage('Вам нужно заполнить форму');
+      setMessageStatus('invalid');
+
+      setTimeout(() => {
+        setMessageStatus('')
+      }, 2000);
+    }
   }
 
+  /*обновление статуса и мессаги под формой*/
   React.useEffect(() => {
     inputControl.resetForm();
   }, [isPosted]);
 
+  React.useEffect(() => {
+    isPosted ? setMessageStatus('sended') 
+             : isError ? setMessageStatus('senderror')
+             : setMessageStatus('');
+
+    isPosted ? setMessage('Спасибо! Мы получили вашу заявку и обязательно свяжемся с вами.')
+             : isError ? setMessage('Ой! Что-то пошло не так. Попробуйте отправить Вашу заявку позднее.')
+             : setMessageStatus('') ;
+  }, [isPosted,isError]);
+
   const formClassList = inView? 'form__form animated' : 'form__form ';
   const submitButtonClassList = !isValid? 'form__button' : isPosted? 'form__button form__button_click' : 'form__button form__button_valid';    
-  const messageClassName = isPosted? 'form__sended form__sended_show' : 'form__sended';                    
-  const messageErrorClassName = isError? 'form__errormessage form__errormessage_show' : 'form__errormessage';                    
   const svgClassName = isLoading? 'form__svg form__svg_show' : 'form__svg';                    
- 
+  const messageClasses = `form__answer ${messageStatus==='invalid' && "form__answer_invalid"} ${messageStatus==='sended' && "form__answer_sended"} ${messageStatus==='senderror' && "form__answer_error"}`
+  
   return ( 
       <section className='form' >
         <Title title={'Подать заявку'}></Title>
@@ -205,9 +223,9 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
                   className    = {submitButtonClassList}
                   onMouseEnter = {() => {onCursor('big')}}
                   onMouseLeave  = {onCursor}
-                  disabled  = {(!isValid && 'disabled')}
+                  /* disabled  = {(!isValid && 'disabled')} */
                   >
-                         Отправить заявку
+                  Отправить заявку
           </button>
           
           <svg className={svgClassName} version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -232,8 +250,7 @@ const Form = ({onSubmit, isPosted, isError,  isSucces, isLoading,  ...props}) =>
           
 
         </form>
-      <p className={messageClassName}>Спасибо! <br/>Мы получили вашу заявку и обязательно свяжемся с вами.</p>
-      <p className={messageErrorClassName}>Что-то пошло не так, пожалуйста, попробуйте позднее</p>
+        <p className={messageClasses}>{message}</p>
      </section>
  
   )
