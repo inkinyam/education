@@ -7,6 +7,9 @@
 /* *{
   cursor: none;    
 }  */
+body {
+  overflow-x: hidden;
+}
 
 *::selection {
  background-color: #d9e856c2;
