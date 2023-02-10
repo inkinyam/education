@@ -94,7 +94,7 @@ const PersonsInfo = [
   { id: 8,
     topic: 'Новеллы и актуальное правоприменение градостроительного законодательства',
     lecturer: 'Валяев О.В.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0.png&fileId=4074909&x=1920&y=1200&a=true',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/DmaY3y9Sa72wrGK?x=1908&y=739&a=true&file=%25D0%2592%25D0%25B0%25D0%25BB%25D1%258F%25D0%25B5%25D0%25B2.png&scalingup=0',
     job: 'Начальник управления правовой базы градостроительства'
   },
 ]
