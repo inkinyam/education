@@ -4,13 +4,6 @@
 @import '~video-react/styles/scss/video-react';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 
-/* *{
-  cursor: none;    
-}  */
-body {
-  overflow-x: hidden;
-}
-
 *::selection {
  background-color: #d9e856c2;
  color: var(--dark-default);
@@ -23,10 +16,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var( --dark-default);
   position: relative;
+  overflow-x: hidden;
+
+  &:has(.notfound) {
+    overflow: hidden;
+  }
 }
 
 :root {
-
   /*СИНИЕ*/
   --primary-default: rgb(45, 139, 241);
   --primary-hovered: #106CD1;

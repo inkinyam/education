@@ -6,7 +6,7 @@ import { AboutCardData } from '../../utils/cardInfo';
 const About = () => {
   
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <Title title='О программе'> </Title>
       <CardList cardData ={AboutCardData}
                 cardComponent={<Card/>}/>

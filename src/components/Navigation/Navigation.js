@@ -1,4 +1,5 @@
 import "./Navigation.scss";
+/* import { Link } from "react-router-dom"; */
 import { Link } from 'react-scroll';
 import logo from '../../images/logo.svg';
 import withCursor from "../../HOCs/withCursor";
