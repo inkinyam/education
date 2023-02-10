@@ -17,7 +17,7 @@ function App() {
       <div className="App">
 
       <Routes>
-        <Route path = "/*" element={<NotFound />} />
+        <Route path = "*" element={<NotFound />} />
         <Route path = "/" element={<Main />} /> 
       </Routes>
       </div>
