@@ -66,14 +66,14 @@ const PersonsInfo = [
   { id: 4,
     topic: 'Прикладные методы градостроительных исследований / Аналитические инструменты решения задач территориального управления',
     lecturer: 'Мустафин Г.М.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9C%D1%83%D1%81%D1%82%D0%B0%D1%84%D0%B8%D0%BD.png&fileId=4116070&x=1920&y=1200&a=true',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/NZm3frQsDZFanJH?x=1908&y=739&a=true&file=%25D0%259C%25D1%2583%25D1%2581%25D1%2582%25D0%25B0%25D1%2584%25D0%25B8%25D0%25BD.png&scalingup=0',
     job: 'Советник директора Института Генплана Москвы'
   },
 
   { id: 5,
     topic: 'Развитие транспортных систем города',
     lecturer: 'Крестмейн М.Г.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D1%80%D0%B5%D1%81%D1%82%D0%BC%D0%B5%D0%B9%D0%BD.png&fileId=4116071&x=1920&y=1200&a=true',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/c4PjHLLqpaFpwrD?x=1908&y=739&a=true&file=%25D0%259A%25D1%2580%25D0%25B5%25D1%2581%25D1%2582%25D0%25BC%25D0%25B5%25D0%25B9%25D0%25BD.png&scalingup=0',
     job: 'Главный инженер Института Генплана Москвы'
   },
 
@@ -94,7 +94,7 @@ const PersonsInfo = [
   { id: 8,
     topic: 'Новеллы и актуальное правоприменение градостроительного законодательства',
     lecturer: 'Валяев О.В.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/DmaY3y9Sa72wrGK?x=1908&y=739&a=true&file=%25D0%2592%25D0%25B0%25D0%25BB%25D1%258F%25D0%25B5%25D0%25B2.png&scalingup=0',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/wb3cGt24XmBSAJB?x=1908&y=739&a=true&file=%25D0%2592%25D0%25B0%25D0%25BB%25D1%258F%25D0%25B5%25D0%25B2.png&scalingup=0',
     job: 'Начальник управления правовой базы градостроительства'
   },
 ]
