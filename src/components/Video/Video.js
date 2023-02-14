@@ -11,7 +11,7 @@ const videoJSOption = {
   preload: 'metadata',
   fluid: true,
   sources: [{
-    src: 'https://praktika.genplanmos.ru/static/video/praktika-small.mp4',
+    src: 'https://dpo.genplanmos.ru/static/video/video.mp4',
     type: 'video/mp4'
   }]
 }
