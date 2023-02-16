@@ -14,6 +14,8 @@ import Up from '../Up/Up';
 import React from 'react';
 import api from '../../utils/Api';
 
+import Cookie from '../Cookie/Cookie';
+
 
 
 const Main = () => {
@@ -25,6 +27,8 @@ const Main = () => {
   const [isSuccesFormPost, setIsSuccesFormPost] = React.useState(false);  // для того, чтобы показать сообщение об удачной отправке формы
   const [isErrorFormPost, setIsErrorFormPost]   = React.useState(false);  // для того, чтобы показать ошибку при отправке формы
   const [isFormPosting, setIsFormPosting]       = React.useState(false);  // для лоадера загрузки чтобы показать что форма отправляется
+
+  const [isCookieClosed, setIsCookieClosed] = React.useState(true);
 
   const handleSubmitForm = ({surname, name, patronymic, email, phone, organization }) => {
     setIsFormPosting(true);
@@ -50,12 +54,30 @@ const Main = () => {
         })
   }
 
+  React.useEffect(()=> {
+    const cookieStatus = localStorage.getItem('DPOCookieClosed');
+    if (cookieStatus&&(cookieStatus ==="true")) {
+        setIsCookieClosed(true);
+    } 
+    else {
+      setIsCookieClosed(false);
+    }
+  }, [])
+
+
+  const handleCLoseCookie = () => {
+    setIsCookieClosed(true);    
+    localStorage.setItem('DPOCookieClosed', !isCookieClosed);
+  }
+
 
   return (     
     <>
         <div className = {isLoading ? 'hide_content': ''}>
          <Layout/>
           <main className = 'main'>
+          <Cookie isClosed = {isCookieClosed}
+                      handleCloseClick = {handleCLoseCookie}/>
             <About />
             <Video/>
           

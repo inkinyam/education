@@ -10,17 +10,21 @@ const Footer = props => {
     <div className='footer__container'>
       <div className='footer__box'>
         <h4 className='footer__title'>© 2023 Институт Генплана Москвы</h4>
-        <Link className='footer__link' 
-              to='#'
-              onMouseEnter = {() => {onCursor('big')}}
-              onMouseLeave = {onCursor}>
-                Политика обработки персональных данных</Link>
+        <a className='footer__link' 
+           href='https://genplanmos.ru/policypersonaldata/'
+           target='_blank'
+           rel='noreferrer'
+           onMouseEnter = {() => {onCursor('big')}}
+           onMouseLeave = {onCursor}>
+             Политика обработки персональных данных</a>
 
-        <Link className='footer__link' 
-              to='#'
-              onMouseEnter = {() => {onCursor('big')}}
-              onMouseLeave = {onCursor}>
-                Пользовательское соглашение</Link>
+        <a className='footer__link' 
+           href='https://genplanmos.ru/useragreement/'
+           target='_blank'
+           rel='noreferrer'
+           onMouseEnter = {() => {onCursor('big')}}
+           onMouseLeave = {onCursor}>
+            Пользовательское соглашение</a>
       </div>
 
       <div className='footer__box'>

@@ -83,12 +83,12 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   cursor: url(../../images/cursor/Cursor-Hand.svg), pointer !important;
 }
 
-.video-js .vjs-control-bar {
+/* .video-js .vjs-control-bar {
   display: none !important;
   @media screen and (max-width: 1000px) {
     display: flex !important;
   }
-}
+} */
 
 .video-js .vjs-play-control,
 .video-js .vjs-mute-control,
