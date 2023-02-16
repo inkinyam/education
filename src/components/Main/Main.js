@@ -60,7 +60,10 @@ const Main = () => {
         setIsCookieClosed(true);
     } 
     else {
-      setIsCookieClosed(false);
+      setTimeout(() => {
+        setIsCookieClosed(false);
+      }, 200);
+      
     }
   }, [])
 
