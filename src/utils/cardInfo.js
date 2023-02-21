@@ -79,9 +79,9 @@ const PersonsInfo = [
 
   { id: 6,
     topic: 'Определение перспективной экономической специализации территорий города исходя из анализа кластеризации существующих экономических комплексов',
-    lecturer: 'Гук Т.Н.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%93%D1%83%D0%BA.png&fileId=4116072&x=1920&y=1200&a=true',
-    job: 'Директор Института Генплана Москвы'
+    lecturer: 'Некрасов Д.Ю.',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/EFdZ2iB7KNyfWFB?x=1908&y=739&a=true&file=%25D0%259D%25D0%25B5%25D0%25BA%25D1%2580%25D0%25B0%25D1%2581%25D0%25BE%25D0%25B2.png&scalingup=0',
+    job: 'Советник директора Института Генплана Москвы'
   },
 
   { id: 7,
