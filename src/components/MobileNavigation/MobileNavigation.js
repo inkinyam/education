@@ -97,7 +97,7 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
             <Link to="video" 
                   onClick={handleBurgerClick}  
                   smooth={true}  
-                  className='mobileNavigation__link'>Как это будет</Link>   
+                  className='mobileNavigation__link'>Кому это полезно</Link>   
           </motion.li>
 
           <motion.li className="mobileNavigation__item"
@@ -139,12 +139,18 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
 
           <motion.li className="mobileNavigation__item"
                       variants={menuItemVariants}> 
-              <Link to="#" className='mobileNavigation__link'>Vkontakte</Link> 
+              <a href="https://vk.com/genplanmos" 
+                 className='mobileNavigation__link'
+                 target='_blank'
+                 rel="noreferrer">Vkontakte</a> 
           </motion.li>
 
           <motion.li className="mobileNavigation__item"
                       variants={menuItemVariants}> 
-              <Link to="#" className='mobileNavigation__link'>Telegram</Link> 
+              <a href="https://t.me/genplan_institute" 
+                 className='mobileNavigation__link'
+                 target='_blank'
+                 rel="noreferrer">Telegram</a> 
           </motion.li>
 
         </motion.ul>

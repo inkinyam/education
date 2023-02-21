@@ -26,7 +26,7 @@ const handleBurgerClick =() => {
         </a>
         <nav className="navigation__list">
         <Link to="about"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >О программе</Link> 
-        <Link to="video"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Как это будет</Link> 
+        <Link to="video"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Кому это полезно</Link> 
         <Link to="accordion" smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Содержание курса</Link> 
         <Link to="persons"   smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Наши лекторы</Link> 
         <Link to="faq"       smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Частые вопросы</Link> 
