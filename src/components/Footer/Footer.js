@@ -54,6 +54,8 @@ const Footer = props => {
               onMouseLeave = {onCursor}>
                 Vkontakte</a>  
           <a  className='footer__link' 
+              target="_blank"
+              rel="noreferrer"
               href='https://genplanmos.ru/'
               onMouseEnter = {() => {onCursor('big')}}
               onMouseLeave = {onCursor}>
