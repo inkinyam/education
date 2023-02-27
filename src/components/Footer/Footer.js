@@ -1,5 +1,4 @@
 import './Footer.scss';
-import { Link } from 'react-router-dom';
 import withCursor from "../../HOCs/withCursor";
 
 const Footer = props => {
@@ -34,7 +33,11 @@ const Footer = props => {
       </div>
 
       <div className='footer__box'>
-        <h4 className='footer__title'>По вопросам: e.gnezdilova@genplanmos.ru</h4>
+        <h4 className='footer__title'>По вопросам:  
+        <a href='mailto:aterekhova@genplanmos.ru'
+           title='Терехова Анна'
+           onMouseEnter = {() => {onCursor('big')}}
+           onMouseLeave = {onCursor}> aterekhova@genplanmos.ru</a></h4>
         <div className='footer__links'>
           <a className='footer__link' 
               href='https://t.me/genplan_institute'

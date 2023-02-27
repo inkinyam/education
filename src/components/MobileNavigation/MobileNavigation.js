@@ -67,9 +67,9 @@ const navClass = isMobileMenuOpen? "mobileNavigation mobileNavigation_opened" : 
       </div>
 
       <div className='mobileNavigation__header'>
-        <Link to='genplanmos.ru' className="mobileNavigation__logo"> 
+        <div className="mobileNavigation__logo"> 
           <img src={logo} alt="логотип"/>
-        </Link>
+        </div>
         
         <button className="mobileNavigation__burger" onClick={handleBurgerClick}>
           <svg width="40" height="40" viewBox="0 0 40 40">

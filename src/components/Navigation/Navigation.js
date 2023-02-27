@@ -16,14 +16,9 @@ const handleBurgerClick =() => {
  return (
     <header className = "navigation">
       <div className = "navigation__container">
-        <a href      = 'https://genplanmos.ru/' 
-           target    = "_blank" 
-           rel       = "noreferrer" 
-           className = "navigation__logo"
-           onMouseEnter = {() => onCursor('big')} 
-           onMouseLeave = {onCursor} > 
+        <div className = "navigation__logo"> 
              <img src={logo} alt="логотип"/>
-        </a>
+        </div>
         <nav className="navigation__list">
         <Link to="about"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >О программе</Link> 
         <Link to="video"     smooth={true} onMouseEnter = {() => onCursor('big')} onMouseLeave = {onCursor} className='navigation__link' >Кому это полезно</Link> 

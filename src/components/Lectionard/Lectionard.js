@@ -27,6 +27,7 @@ const Lectionard = ({data, color, ...props}) => {
 
         <small className='lectioncard__tag'>Лектор</small>
         <p className='lectioncard__lecturer'>{data.lecturer}</p>
+        <p className='lectioncard__lecturer'>{data.lecturerJob}</p>
       </div> 
     </li>
   )
