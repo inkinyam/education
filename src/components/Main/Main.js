@@ -92,7 +92,7 @@ const Main = () => {
                 <div className='persons__bg'></div>8
               </div>
               <Persons title='Кураторы' personData={curatorsInfo}/>
-              <Persons title='Наши лекторы' personData={lectorsInfo}/>
+              <Persons title='Лекторы' personData={lectorsInfo}/>
             </div>
            
 
