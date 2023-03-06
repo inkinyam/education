@@ -3,7 +3,8 @@ const AboutCardData = [
     title: 'Для кого наш курс',
     info: [
       'Муниципальные служащие департаментов, связанных с городским устройством (департамент архитектуры и градостроительства, землепользования, экономической политики);',
-      'Сотрудники региональных профильных комитетов/министерств.'
+      'Сотрудники региональных профильных комитетов/министерств;',
+      'Широкий круг специалистов государственных и частных предприятий.'
     ]
   },
   { id: 2,
@@ -18,7 +19,7 @@ const AboutCardData = [
   { id: 3,
     title: 'Кто преподает?',
     info: [
-      'Преподаватели курса архитекторы и инженеры Института Генплана Москвы с большим практическим опытом проектирования, научные сотрудники МГСУ.'
+      'Преподаватели курса специалисты Института Генплана Москвы с большим практическим опытом проектирования, научные сотрудники НИУ МГСУ.'
     ]
   },
   { id: 4,
@@ -41,26 +42,42 @@ const AboutCardData = [
   }
 ];
 
-const PersonsInfo = [
+const curatorsInfo = [
   { id: 1,
-    topic: 'Подходы к разработке документов территориального планирования',
-    lecturer: 'Колонтай А.Н.',
-    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D1%82%D0%B0%D0%B9.png&fileId=4116067&x=1920&y=1200&a=true',
-    job: 'Заместитель директора Института Генплана'
+    topic: '',
+    lecturer: 'Гук Т.Н.',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/PW6tqNFmwBz3Sja?x=1908&y=739&a=true&file=%25D0%2593%25D1%2583%25D0%25BA.png&scalingup=0',
+    job: 'Директор Института Генплана Москвы'
   },
 
   { id: 2,
-    topic: 'Современные вызовы устойчивому развитию городов. Тенденции развития. Мировой и отечественный опыт',
+    topic: '',
     lecturer: 'Данилина Н.В.',
     lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D0%BD%D0%B0.png&fileId=4116068&x=1920&y=1200&a=true',
     job: 'д.т.н., член-корр. РААСН, Зав. Кафедры, «Градостроительство» НИУ МГСУ'
   },
 
   { id: 3,
+    topic: '',
+    lecturer: 'Власов Д.Н.',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/5FtAbQ66LDfAftw?x=1908&y=739&a=true&file=%25D0%2592%25D0%25BB%25D0%25B0%25D1%2581%25D0%25BE%25D0%25B2.png&scalingup=0',
+    job: 'Заместитель директора Института Генплана Москвы'
+  }
+]
+
+const lectorsInfo = [
+  { id: 1,
+    topic: 'Подходы к разработке документов территориального планирования',
+    lecturer: 'Колонтай А.Н.',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%9A%D0%BE%D0%BB%D0%BE%D0%BD%D1%82%D0%B0%D0%B9.png&fileId=4116067&x=1920&y=1200&a=true',
+    job: 'Заместитель директора Института Генплана Москвы'
+  },
+
+  { id: 3,
     topic: 'Анализ и планирование исторических территорий',
     lecturer: 'Верховский Д.А.',
     lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%92%D0%B5%D1%80%D1%85%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9.png&fileId=4116069&x=1920&y=1200&a=true',
-    job: 'Начальник мастерской "Планирования и анализа исторических территорий" (МПиАИТ)'
+    job: 'Начальник мастерской планирования и анализа исторических территорий (МПиАИТ) Института Генплана Москвы'
   },
 
   { id: 4,
@@ -100,7 +117,7 @@ const PersonsInfo = [
 
   { id: 9,
     topic: ' ',
-    lecturer: 'Петров М.В.',
+    lecturer: 'Перов М.В.',
     lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/TBFjQGdSNfpSFQt?x=1780&y=412&a=true&file=%25D0%259F%25D0%25B5%25D1%2580%25D0%25BE%25D0%25B2.png&scalingup=0',
     job: 'Советник директора Института Генплана Москвы'
   },
@@ -137,7 +154,7 @@ const PersonsInfo = [
 const lectionInfo = [
   { 
     id: '1',
-    chapter: '«Элементы градостроительства и документы территориального планирования в управлении городским пространством»',
+    chapter: '«Элементы градостроительства и документы территориального планирования в управлении городским пространством» - часть 1',
     chapterInfo: '(2 лекции) ',
     lecture: [
       {
@@ -164,7 +181,7 @@ const lectionInfo = [
   },
   {
      id: '2',
-    chapter: '«Элементы градостроительства и документы территориального планирования в управлении городским пространством»',
+    chapter: '«Элементы градостроительства и документы территориального планирования в управлении городским пространством» - часть 2',
     chapterInfo: '(3 лекции)',
     lecture: [
       {
@@ -333,7 +350,7 @@ const vebinarsInfo = [
           'Перспективы сохранения наследия в городском пространстве.',
           ],
         lecturer: 'Верховский Д.А.',
-        lecturerJob: 'Начальник мастерской "Планирования и анализа исторических территорий" (МПиАИТ)'
+        lecturerJob: 'Начальник мастерской планирования и анализа исторических территорий (МПиАИТ) Института Генплана Москвы'
       }
     ]
   },
@@ -445,5 +462,5 @@ const faqInfo = [
   }
 ]
 
-export { AboutCardData, PersonsInfo, lectionInfo, vebinarsInfo, faqInfo };
+export { AboutCardData, curatorsInfo, lectorsInfo, lectionInfo, vebinarsInfo, faqInfo };
 

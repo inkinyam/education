@@ -16,6 +16,7 @@ import api from '../../utils/Api';
 
 import Cookie from '../Cookie/Cookie';
 
+import {curatorsInfo, lectorsInfo} from '../../utils/cardInfo';
 
 
 const Main = () => {
@@ -85,7 +86,17 @@ const Main = () => {
             <Video/>
           
             <Accodion/>
-            <Persons/>
+
+            <div className='persons__compose'>
+              <div className='persons__layout'>
+                <div className='persons__bg'></div>8
+              </div>
+              <Persons title='Кураторы' personData={curatorsInfo}/>
+              <Persons title='Наши лекторы' personData={lectorsInfo}/>
+            </div>
+           
+
+
             <div className='main__compose'>
               <div className='main__layout'>
                 <div className='main__bg'></div>

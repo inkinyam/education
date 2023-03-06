@@ -33,11 +33,13 @@ const Footer = props => {
       </div>
 
       <div className='footer__box'>
-        <h4 className='footer__title'>По вопросам:  
+        <h4 className='footer__title'>По всем вопросам:  </h4>
         <a href='mailto:aterekhova@genplanmos.ru'
            title='Терехова Анна'
+           className='footer__link'
            onMouseEnter = {() => {onCursor('big')}}
-           onMouseLeave = {onCursor}> aterekhova@genplanmos.ru</a></h4>
+           onMouseLeave = {onCursor}>Анна Терехова: aterekhova@genplanmos.ru</a>
+
         <div className='footer__links'>
           <a className='footer__link' 
               href='https://t.me/genplan_institute'
