@@ -1,3 +1,4 @@
+import React from 'react';
 import './Lectionard.scss';
 import withCursor from "../../HOCs/withCursor";
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 import withCursor from "../../HOCs/withCursor";
-import Lectionard from '../Lectionard/Lectionard';
+ import Lectionard from '../Lectionard/Lectionard'; 
 
 const AccodionCard = ({data, color, ...props}) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -100,9 +100,10 @@ const AccodionCard = ({data, color, ...props}) => {
           {
             data.lecture.map((item, inx) => {
               return(
-                <Lectionard key   = {inx} 
-                            data  = {item}
-                            color = {color}/>
+               
+              <Lectionard key   = {inx} 
+                          data  = {item}
+                          color = {color}/> 
               )
             })
           }
