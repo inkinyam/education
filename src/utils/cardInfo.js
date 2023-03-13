@@ -62,6 +62,13 @@ const curatorsInfo = [
     lecturer: 'Власов Д.Н.',
     lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/5FtAbQ66LDfAftw?x=1908&y=739&a=true&file=%25D0%2592%25D0%25BB%25D0%25B0%25D1%2581%25D0%25BE%25D0%25B2.png&scalingup=0',
     job: 'Заместитель директора Института Генплана Москвы'
+  },
+
+  { id: 4,
+    topic: '',
+    lecturer: 'Княжевская Ю.В.',
+    lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/MkfyMx5Y2iP37dx?x=1430&y=546&a=true&file=Knyazevskaya.png&scalingup=0',
+    job: 'Председатель Комитета по архитектуре и градостроительству города Москвы'
   }
 ]
 
