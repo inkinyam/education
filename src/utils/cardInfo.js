@@ -54,7 +54,7 @@ const curatorsInfo = [
     topic: '',
     lecturer: 'Данилина Н.В.',
     lecturerPhoto: 'https://nc.genplanmos.ru/index.php/apps/files_sharing/publicpreview/LnznJwep9Jc2o8J?file=/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D0%BD%D0%B0.png&fileId=4116068&x=1920&y=1200&a=true',
-    job: 'д.т.н., член-корр. РААСН, Зав. Кафедры, «Градостроительство» НИУ МГСУ'
+    job: 'д.т.н., член-корр. РААСН, зав. кафедрой «Градостроительство» НИУ МГСУ'
   },
 
   { id: 3,
